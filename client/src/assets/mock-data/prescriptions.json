@@ -1,0 +1,278 @@
+[
+  {
+    "id": "pres001",
+    "pacienteId": "pac001",
+    "medicoId": "med001",
+    "consultaId": "cons001",
+    "data": "2025-01-10T14:30:00Z",
+    "medicamentos": [
+      {
+        "nome": "Losartana Potássica",
+        "dose": "50mg",
+        "via": "Oral",
+        "frequencia": "1x ao dia",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Tomar pela manhã, em jejum ou após refeição leve"
+      },
+      {
+        "nome": "Hidroclorotiazida",
+        "dose": "12.5mg",
+        "via": "Oral",
+        "frequencia": "1x ao dia",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Tomar pela manhã. Monitorizar potássio sérico"
+      }
+    ],
+    "observacoes": "Dieta hipossódica. Restrição < 2g sal/dia. Exercício aeróbico 30min/dia.",
+    "validade": "2025-04-10",
+    "status": "ativa"
+  },
+  {
+    "id": "pres002",
+    "pacienteId": "pac001",
+    "medicoId": "med001",
+    "consultaId": "cons001",
+    "data": "2025-01-10T14:30:00Z",
+    "medicamentos": [
+      {
+        "nome": "Atorvastatina",
+        "dose": "20mg",
+        "via": "Oral",
+        "frequencia": "1x à noite",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Tomar à noite. Evitar sumo de toranja"
+      }
+    ],
+    "observacoes": "Controlo lipídico. Colesterol LDL alvo < 100mg/dL.",
+    "validade": "2025-07-10",
+    "status": "ativa"
+  },
+  {
+    "id": "pres003",
+    "pacienteId": "pac002",
+    "medicoId": "med001",
+    "consultaId": "cons002",
+    "data": "2025-01-08T09:45:00Z",
+    "medicamentos": [
+      {
+        "nome": "Salbutamol (Ventolin)",
+        "dose": "100mcg",
+        "via": "Inalatória",
+        "frequencia": "2 jatos quando necessário",
+        "duracao": "Contínuo (resgate)",
+        "instrucoes": "Usar apenas em crise. Máximo 4x/dia"
+      },
+      {
+        "nome": "Beclometasona",
+        "dose": "250mcg",
+        "via": "Inalatória",
+        "frequencia": "2 jatos 2x ao dia",
+        "duracao": "3 meses",
+        "instrucoes": "Usar de manhã e à noite. Bochechar após uso"
+      }
+    ],
+    "observacoes": "Manter inalador sempre acessível. Evitar desencadeantes alérgicos.",
+    "validade": "2025-04-08",
+    "status": "ativa"
+  },
+  {
+    "id": "pres004",
+    "pacienteId": "pac003",
+    "medicoId": "med009",
+    "consultaId": "cons003",
+    "data": "2025-01-12T10:50:00Z",
+    "medicamentos": [
+      {
+        "nome": "Metformina",
+        "dose": "850mg",
+        "via": "Oral",
+        "frequencia": "2x ao dia",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Tomar com as refeições para reduzir efeitos gastrointestinais"
+      }
+    ],
+    "observacoes": "Dieta para diabéticos. Medir glicemia capilar 2x/dia. Manter registo.",
+    "validade": "2025-07-12",
+    "status": "ativa"
+  },
+  {
+    "id": "pres005",
+    "pacienteId": "pac003",
+    "medicoId": "med009",
+    "consultaId": "cons003",
+    "data": "2025-01-12T10:50:00Z",
+    "medicamentos": [
+      {
+        "nome": "Atorvastatina",
+        "dose": "40mg",
+        "via": "Oral",
+        "frequencia": "1x à noite",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Tomar à noite com ou sem alimento"
+      }
+    ],
+    "observacoes": "Controlo de dislipidémia. Perfil lipídico em 3 meses.",
+    "validade": "2025-07-12",
+    "status": "ativa"
+  },
+  {
+    "id": "pres006",
+    "pacienteId": "pac005",
+    "medicoId": "med002",
+    "consultaId": "cons004",
+    "data": "2025-01-14T10:15:00Z",
+    "medicamentos": [
+      {
+        "nome": "AAS (Ácido Acetilsalicílico)",
+        "dose": "100mg",
+        "via": "Oral",
+        "frequencia": "1x ao dia",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Tomar após almoço. Não interromper sem consultar médico"
+      },
+      {
+        "nome": "Metoprolol",
+        "dose": "50mg",
+        "via": "Oral",
+        "frequencia": "2x ao dia",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Tomar de manhã e à noite. Não parar abruptamente"
+      }
+    ],
+    "observacoes": "REPOUSO RELATIVO. Não dirigir. Retornar com urgência se dor torácica.",
+    "validade": "2025-04-14",
+    "status": "ativa"
+  },
+  {
+    "id": "pres007",
+    "pacienteId": "pac005",
+    "medicoId": "med002",
+    "consultaId": "cons004",
+    "data": "2025-01-14T10:15:00Z",
+    "medicamentos": [
+      {
+        "nome": "Atorvastatina",
+        "dose": "80mg",
+        "via": "Oral",
+        "frequencia": "1x à noite",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Alta dose para evento cardíaco agudo"
+      }
+    ],
+    "observacoes": "LDL alvo < 70mg/dL para doença cardiovascular estabelecida.",
+    "validade": "2025-04-14",
+    "status": "ativa"
+  },
+  {
+    "id": "pres008",
+    "pacienteId": "pac006",
+    "medicoId": "med004",
+    "consultaId": "cons005",
+    "data": "2025-01-13T09:40:00Z",
+    "medicamentos": [
+      {
+        "nome": "Ácido Fólico",
+        "dose": "5mg",
+        "via": "Oral",
+        "frequencia": "1x ao dia",
+        "duracao": "Até 12ª semana de gestação",
+        "instrucoes": "Tomar em jejum, de manhã"
+      },
+      {
+        "nome": "Sulfato Ferroso",
+        "dose": "300mg",
+        "via": "Oral",
+        "frequencia": "1x ao dia",
+        "duracao": "Até ao parto",
+        "instrucoes": "Tomar com sumo de laranja para melhorar absorção"
+      },
+      {
+        "nome": "Carbonato de Cálcio",
+        "dose": "500mg",
+        "via": "Oral",
+        "frequencia": "2x ao dia",
+        "duracao": "Até ao parto",
+        "instrucoes": "Tomar com as refeições"
+      }
+    ],
+    "observacoes": "Manter suplementação pré-natal. Evitar esforços físicos intensos.",
+    "validade": "2025-04-13",
+    "status": "ativa"
+  },
+  {
+    "id": "pres009",
+    "pacienteId": "pac009",
+    "medicoId": "med008",
+    "consultaId": "cons006",
+    "data": "2025-01-15T07:45:00Z",
+    "medicamentos": [
+      {
+        "nome": "Furosemida",
+        "dose": "40mg",
+        "via": "Oral",
+        "frequencia": "1x ao dia",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Tomar pela manhã. Monitorizar diurese e potássio"
+      },
+      {
+        "nome": "Amlodipina",
+        "dose": "10mg",
+        "via": "Oral",
+        "frequencia": "1x ao dia",
+        "duracao": "Uso contínuo",
+        "instrucoes": "Controlo de pressão arterial na IRC"
+      }
+    ],
+    "observacoes": "Dieta hipoproteica e hipopotássémica. Restrição hídrica 1.5L/dia.",
+    "validade": "2025-04-15",
+    "status": "ativa"
+  },
+  {
+    "id": "pres010",
+    "pacienteId": "pac009",
+    "medicoId": "med008",
+    "consultaId": "cons006",
+    "data": "2025-01-15T07:45:00Z",
+    "medicamentos": [
+      {
+        "nome": "Eritropoietina Humana Recombinante",
+        "dose": "4000 UI",
+        "via": "Subcutânea",
+        "frequencia": "3x por semana",
+        "duracao": "Contínuo",
+        "instrucoes": "Administrar durante diálise. Monitorizar hematócrito"
+      }
+    ],
+    "observacoes": "Anemia da IRC. Hemoglobina alvo 10-11g/dL.",
+    "validade": "2025-04-15",
+    "status": "ativa"
+  },
+  {
+    "id": "pres011",
+    "pacienteId": "pac011",
+    "medicoId": "med005",
+    "consultaId": "cons007",
+    "data": "2025-01-09T15:45:00Z",
+    "medicamentos": [
+      {
+        "nome": "Ibuprofeno",
+        "dose": "600mg",
+        "via": "Oral",
+        "frequencia": "3x ao dia",
+        "duracao": "7 dias",
+        "instrucoes": "Tomar após refeições. Suspender se dor gástrica"
+      },
+      {
+        "nome": "Omeprazol",
+        "dose": "20mg",
+        "via": "Oral",
+        "frequencia": "1x ao dia",
+        "duracao": "7 dias",
+        "instrucoes": "Gastroprotecção. Tomar 30min antes do pequeno-almoço"
+      }
+    ],
+    "observacoes": "Fisioterapia 2x/semana. Evitar permanecer sentado >1h seguida.",
+    "validade": "2025-01-16",
+    "status": "concluida"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "esp001",
+    "nome": "Clínica Geral",
+    "descricao": "Atendimento médico geral e cuidados primários de saúde",
+    "ativo": true
+  },
+  {
+    "id": "esp002",
+    "nome": "Cardiologia",
+    "descricao": "Diagnóstico e tratamento de doenças do coração e sistema cardiovascular",
+    "ativo": true
+  },
+  {
+    "id": "esp003",
+    "nome": "Pediatria",
+    "descricao": "Cuidados médicos para crianças e adolescentes",
+    "ativo": true
+  },
+  {
+    "id": "esp004",
+    "nome": "Ginecologia e Obstetrícia",
+    "descricao": "Saúde da mulher, gravidez e parto",
+    "ativo": true
+  },
+  {
+    "id": "esp005",
+    "nome": "Ortopedia",
+    "descricao": "Tratamento de lesões e doenças do sistema músculo-esquelético",
+    "ativo": true
+  },
+  {
+    "id": "esp006",
+    "nome": "Dermatologia",
+    "descricao": "Diagnóstico e tratamento de doenças da pele",
+    "ativo": true
+  },
+  {
+    "id": "esp007",
+    "nome": "Neurologia",
+    "descricao": "Doenças do sistema nervoso central e periférico",
+    "ativo": true
+  },
+  {
+    "id": "esp008",
+    "nome": "Medicina Interna",
+    "descricao": "Diagnóstico e tratamento de doenças de adultos",
+    "ativo": true
+  },
+  {
+    "id": "esp009",
+    "nome": "Endocrinologia",
+    "descricao": "Doenças hormonais e metabólicas, incluindo diabetes",
+    "ativo": true
+  },
+  {
+    "id": "esp010",
+    "nome": "Psiquiatria",
+    "descricao": "Saúde mental e tratamento de transtornos psiquiátricos",
+    "ativo": true
+  }
+]

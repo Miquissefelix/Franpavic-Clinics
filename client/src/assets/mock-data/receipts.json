@@ -1,0 +1,8 @@
+[
+  { "id": "rec001", "pagamentoId": "pay001", "pacienteId": "pac001", "numero": "REC-2025-0001", "data": "2025-01-10T15:00:00Z", "total": 1500, "emitidoPor": "Maria Conceição Sitoe" },
+  { "id": "rec002", "pagamentoId": "pay002", "pacienteId": "pac002", "numero": "REC-2025-0002", "data": "2025-01-08T10:00:00Z", "total": 2350, "emitidoPor": "Maria Conceição Sitoe" },
+  { "id": "rec003", "pagamentoId": "pay003", "pacienteId": "pac003", "numero": "REC-2025-0003", "data": "2025-01-12T11:00:00Z", "total": 3060, "emitidoPor": "Maria Conceição Sitoe" },
+  { "id": "rec004", "pagamentoId": "pay004", "pacienteId": "pac005", "numero": "REC-2025-0004", "data": "2025-01-14T11:00:00Z", "total": 4200, "emitidoPor": "Maria Conceição Sitoe" },
+  { "id": "rec005", "pagamentoId": "pay005", "pacienteId": "pac006", "numero": "REC-2025-0005", "data": "2025-01-13T10:00:00Z", "total": 2970, "emitidoPor": "Maria Conceição Sitoe" },
+  { "id": "rec006", "pagamentoId": "pay007", "pacienteId": "pac011", "numero": "REC-2025-0006", "data": "2025-01-09T16:00:00Z", "total": 2900, "emitidoPor": "Maria Conceição Sitoe" }
+]

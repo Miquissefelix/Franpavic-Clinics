@@ -1,0 +1,117 @@
+[
+  {
+    "id": "lab-req001",
+    "pacienteId": "pac001",
+    "medicoId": "med001",
+    "consultaId": "cons001",
+    "data": "2025-01-10T14:30:00Z",
+    "exames": [
+      "Hemograma Completo",
+      "Ureia e Creatinina",
+      "Ionograma (Na, K)",
+      "Glicemia em Jejum",
+      "Perfil Lipídico",
+      "Ácido Úrico",
+      "Microalbuminúria"
+    ],
+    "urgencia": "rotina",
+    "instrucoes": "Jejum de 8 horas. Recolha de urina de primeira manhã.",
+    "status": "resultado-disponivel",
+    "resultadoId": "lab-res001"
+  },
+  {
+    "id": "lab-req002",
+    "pacienteId": "pac003",
+    "medicoId": "med009",
+    "consultaId": "cons003",
+    "data": "2025-01-12T10:50:00Z",
+    "exames": [
+      "HbA1c (Hemoglobina Glicada)",
+      "Glicemia em Jejum",
+      "Perfil Lipídico",
+      "Função Renal (Ureia, Creatinina)",
+      "Microalbuminúria"
+    ],
+    "urgencia": "rotina",
+    "instrucoes": "Jejum de 8 horas mínimo.",
+    "status": "resultado-disponivel",
+    "resultadoId": "lab-res002"
+  },
+  {
+    "id": "lab-req003",
+    "pacienteId": "pac005",
+    "medicoId": "med002",
+    "consultaId": "cons004",
+    "data": "2025-01-14T10:15:00Z",
+    "exames": [
+      "Troponina I (urgente)",
+      "CK-MB",
+      "BNP (Peptídeo Natriurético)",
+      "D-Dímeros",
+      "Hemograma",
+      "Coagulação (TP, APTT)",
+      "Ecocardiograma (solicitação)"
+    ],
+    "urgencia": "urgente",
+    "instrucoes": "URGENTE. Colher imediatamente. Notificar laboratório.",
+    "status": "resultado-disponivel",
+    "resultadoId": "lab-res003"
+  },
+  {
+    "id": "lab-req004",
+    "pacienteId": "pac006",
+    "medicoId": "med004",
+    "consultaId": "cons005",
+    "data": "2025-01-13T09:40:00Z",
+    "exames": [
+      "Hemograma Completo",
+      "Grupo Sanguíneo e Rh",
+      "Glicemia",
+      "TORCH (Toxoplasmose, Rubéola, CMV, Herpes)",
+      "HIV (após consentimento)",
+      "VDRL (Sífilis)",
+      "Urocultura"
+    ],
+    "urgencia": "rotina",
+    "instrucoes": "Exames pré-natais de rotina do 2º trimestre.",
+    "status": "pendente",
+    "resultadoId": null
+  },
+  {
+    "id": "lab-req005",
+    "pacienteId": "pac009",
+    "medicoId": "med008",
+    "consultaId": "cons006",
+    "data": "2025-01-15T07:45:00Z",
+    "exames": [
+      "Ureia e Creatinina",
+      "eGFR",
+      "Ionograma Completo",
+      "Fósforo e Cálcio",
+      "PTH (Paratormona)",
+      "Hemograma",
+      "Albumina sérica",
+      "PCR"
+    ],
+    "urgencia": "rotina",
+    "instrucoes": "Colher antes da sessão de hemodiálise.",
+    "status": "resultado-disponivel",
+    "resultadoId": "lab-res004"
+  },
+  {
+    "id": "lab-req006",
+    "pacienteId": "pac002",
+    "medicoId": "med001",
+    "consultaId": "cons002",
+    "data": "2025-01-08T09:45:00Z",
+    "exames": [
+      "Espirometria",
+      "IgE Total",
+      "RAST (Painel alérgenos respiratórios)"
+    ],
+    "urgencia": "rotina",
+    "instrucoes": "Não usar broncodilatador nas 4h antes da espirometria.",
+    "status": "pendente",
+    "resultadoId": null
+  }
+]

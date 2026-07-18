@@ -1,0 +1,150 @@
+[
+  {
+    "id": "cons001",
+    "pacienteId": "pac001",
+    "medicoId": "med001",
+    "consultaId": "con002",
+    "data": "2025-01-10T14:00:00Z",
+    "queixas": "Cefaleia occipital há 3 dias. Tontura ao levantar. Visão turva episódica.",
+    "diagnosticoPrincipal": {
+      "codigo": "I10",
+      "descricao": "Hipertensão Essencial (Primária)"
+    },
+    "diagnosticosSecundarios": [],
+    "prescricoes": ["pres001", "pres002"],
+    "pedidosLaboratorio": ["lab-req001"],
+    "observacoes": "PA 152/94 no consultório. Ajuste de medicação. Orientado sobre dieta hipossódica e atividade física regular.",
+    "planoSeguimento": "Retorno em 1 semana para controlo de PA. Trazer diário de PA domiciliar.",
+    "atestado": null,
+    "status": "concluida",
+    "criadoEm": "2025-01-10T14:30:00Z"
+  },
+  {
+    "id": "cons002",
+    "pacienteId": "pac002",
+    "medicoId": "med001",
+    "consultaId": "con002",
+    "data": "2025-01-08T09:00:00Z",
+    "queixas": "Episódio agudo de dispneia com sibilância. Tosse seca. Sem febre.",
+    "diagnosticoPrincipal": {
+      "codigo": "J45",
+      "descricao": "Asma"
+    },
+    "diagnosticosSecundarios": [],
+    "prescricoes": ["pres003"],
+    "pedidosLaboratorio": [],
+    "observacoes": "Crise asmática leve a moderada. Respondeu bem à inalação de salbutamol. SpO2 normalizou.",
+    "planoSeguimento": "Manter salbutamol de resgate. Iniciar beclometasona inalada. Retorno em 2 semanas.",
+    "atestado": "cert001",
+    "status": "concluida",
+    "criadoEm": "2025-01-08T09:45:00Z"
+  },
+  {
+    "id": "cons003",
+    "pacienteId": "pac003",
+    "medicoId": "med009",
+    "consultaId": "con003",
+    "data": "2025-01-12T10:00:00Z",
+    "queixas": "Glicemia em jejum elevada. Poliúria leve. Cansaço.",
+    "diagnosticoPrincipal": {
+      "codigo": "E11",
+      "descricao": "Diabetes Mellitus Tipo 2"
+    },
+    "diagnosticosSecundarios": [
+      { "codigo": "E78", "descricao": "Dislipidémia" }
+    ],
+    "prescricoes": ["pres004", "pres005"],
+    "pedidosLaboratorio": ["lab-req002"],
+    "observacoes": "HbA1c de 8.2%. Glicemia de jejum 187mg/dL. Ajuste de metformina. Solicitar perfil lipídico.",
+    "planoSeguimento": "Retorno em 3 meses. Dieta e exercício. Medir glicemia 2x/dia.",
+    "atestado": null,
+    "status": "concluida",
+    "criadoEm": "2025-01-12T10:50:00Z"
+  },
+  {
+    "id": "cons004",
+    "pacienteId": "pac005",
+    "medicoId": "med002",
+    "consultaId": "con005",
+    "data": "2025-01-14T09:30:00Z",
+    "queixas": "Dor precordial em aperto. Dispneia ao esforço. Palpitações.",
+    "diagnosticoPrincipal": {
+      "codigo": "I25",
+      "descricao": "Doença Cardíaca Isquémica Crónica"
+    },
+    "diagnosticosSecundarios": [
+      { "codigo": "I10", "descricao": "Hipertensão Arterial" }
+    ],
+    "prescricoes": ["pres006", "pres007"],
+    "pedidosLaboratorio": ["lab-req003"],
+    "observacoes": "ECG com alterações ST em V4-V6. Solicitar ecocardiograma urgente e enzimas cardíacas.",
+    "planoSeguimento": "Retorno com resultados em 48h. Repouso relativo. Não dirigir.",
+    "atestado": "cert002",
+    "status": "concluida",
+    "criadoEm": "2025-01-14T10:15:00Z"
+  },
+  {
+    "id": "cons005",
+    "pacienteId": "pac006",
+    "medicoId": "med004",
+    "consultaId": "con006",
+    "data": "2025-01-13T09:00:00Z",
+    "queixas": "Consulta pré-natal de rotina. 24 semanas. Sem queixas.",
+    "diagnosticoPrincipal": {
+      "codigo": "Z34",
+      "descricao": "Supervisão de Gravidez Normal"
+    },
+    "diagnosticosSecundarios": [],
+    "prescricoes": ["pres008"],
+    "pedidosLaboratorio": ["lab-req004"],
+    "observacoes": "Eco morfológico normal. Feto em apresentação cefálica. BCF 148bpm. Próximo eco 28 semanas.",
+    "planoSeguimento": "Retorno em 4 semanas. Manter suplementação. Evitar esforços.",
+    "atestado": null,
+    "status": "concluida",
+    "criadoEm": "2025-01-13T09:40:00Z"
+  },
+  {
+    "id": "cons006",
+    "pacienteId": "pac009",
+    "medicoId": "med008",
+    "consultaId": "con008",
+    "data": "2025-01-15T07:00:00Z",
+    "queixas": "Edema bilateral MMII. PA elevada. Redução diurese.",
+    "diagnosticoPrincipal": {
+      "codigo": "N18",
+      "descricao": "Doença Renal Crónica"
+    },
+    "diagnosticosSecundarios": [
+      { "codigo": "I12", "descricao": "Doença Renal Hipertensiva" }
+    ],
+    "prescricoes": ["pres009", "pres010"],
+    "pedidosLaboratorio": ["lab-req005"],
+    "observacoes": "Creatinina 4.2mg/dL. eGFR 14 mL/min. Em diálise 3x/semana. Ponderar referência nefrológica urgente.",
+    "planoSeguimento": "Retorno em 1 semana. Dieta hipoproteica e hipopotássémica.",
+    "atestado": null,
+    "status": "concluida",
+    "criadoEm": "2025-01-15T07:45:00Z"
+  },
+  {
+    "id": "cons007",
+    "pacienteId": "pac011",
+    "medicoId": "med005",
+    "consultaId": "con010",
+    "data": "2025-01-09T15:00:00Z",
+    "queixas": "Dor lombar L4-L5. Piora ao permanecer sentado. Irradiação para membro inferior direito.",
+    "diagnosticoPrincipal": {
+      "codigo": "M54",
+      "descricao": "Lombalgia"
+    },
+    "diagnosticosSecundarios": [
+      { "codigo": "M51", "descricao": "Degenerescência do Disco Intervertebral" }
+    ],
+    "prescricoes": ["pres011"],
+    "pedidosLaboratorio": [],
+    "observacoes": "RX coluna lombar sem fractura. Continuar fisioterapia 2x/semana.",
+    "planoSeguimento": "Retorno em 1 mês. Considerar RM se sem melhoria.",
+    "atestado": null,
+    "status": "concluida",
+    "criadoEm": "2025-01-09T15:45:00Z"
+  }
+]

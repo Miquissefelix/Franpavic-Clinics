@@ -1,0 +1,92 @@
+[
+  {
+    "id": "lab-res001",
+    "pedidoId": "lab-req001",
+    "pacienteId": "pac001",
+    "data": "2025-01-11T10:00:00Z",
+    "laboratorio": "Laboratório FranPavic",
+    "tecnico": "Técnico Armindo",
+    "resultados": [
+      { "exame": "Hemoglobina", "valor": "14.2", "unidade": "g/dL", "referencia": "13.5-17.5", "status": "normal" },
+      { "exame": "Leucócitos", "valor": "7800", "unidade": "/μL", "referencia": "4000-11000", "status": "normal" },
+      { "exame": "Plaquetas", "valor": "245000", "unidade": "/μL", "referencia": "150000-400000", "status": "normal" },
+      { "exame": "Glicemia em Jejum", "valor": "102", "unidade": "mg/dL", "referencia": "70-99", "status": "elevado" },
+      { "exame": "Colesterol Total", "valor": "215", "unidade": "mg/dL", "referencia": "<200", "status": "elevado" },
+      { "exame": "LDL Colesterol", "valor": "138", "unidade": "mg/dL", "referencia": "<130", "status": "elevado" },
+      { "exame": "HDL Colesterol", "valor": "45", "unidade": "mg/dL", "referencia": ">40", "status": "normal" },
+      { "exame": "Triglicerídeos", "valor": "160", "unidade": "mg/dL", "referencia": "<150", "status": "elevado" },
+      { "exame": "Creatinina", "valor": "1.0", "unidade": "mg/dL", "referencia": "0.7-1.2", "status": "normal" },
+      { "exame": "Ureia", "valor": "38", "unidade": "mg/dL", "referencia": "15-45", "status": "normal" },
+      { "exame": "Sódio", "valor": "139", "unidade": "mEq/L", "referencia": "135-145", "status": "normal" },
+      { "exame": "Potássio", "valor": "4.1", "unidade": "mEq/L", "referencia": "3.5-5.0", "status": "normal" },
+      { "exame": "Microalbuminúria", "valor": "42", "unidade": "mg/g creat", "referencia": "<30", "status": "elevado" },
+      { "exame": "Ácido Úrico", "valor": "6.2", "unidade": "mg/dL", "referencia": "3.4-7.0", "status": "normal" }
+    ],
+    "observacoes": "Dislipidémia e pré-diabetes. Microalbuminúria indica lesão renal inicial. Revisão de terapêutica.",
+    "validadoPor": "Dr. António Machava",
+    "status": "disponivel"
+  },
+  {
+    "id": "lab-res002",
+    "pedidoId": "lab-req002",
+    "pacienteId": "pac003",
+    "data": "2025-01-13T09:00:00Z",
+    "laboratorio": "Laboratório FranPavic",
+    "tecnico": "Técnica Sónia",
+    "resultados": [
+      { "exame": "HbA1c", "valor": "8.2", "unidade": "%", "referencia": "<7.0", "status": "elevado" },
+      { "exame": "Glicemia em Jejum", "valor": "187", "unidade": "mg/dL", "referencia": "70-99", "status": "elevado" },
+      { "exame": "Colesterol Total", "valor": "248", "unidade": "mg/dL", "referencia": "<200", "status": "elevado" },
+      { "exame": "LDL Colesterol", "valor": "165", "unidade": "mg/dL", "referencia": "<130", "status": "elevado" },
+      { "exame": "HDL Colesterol", "valor": "38", "unidade": "mg/dL", "referencia": ">40", "status": "baixo" },
+      { "exame": "Triglicerídeos", "valor": "225", "unidade": "mg/dL", "referencia": "<150", "status": "elevado" },
+      { "exame": "Creatinina", "valor": "1.1", "unidade": "mg/dL", "referencia": "0.7-1.2", "status": "normal" },
+      { "exame": "Microalbuminúria", "valor": "68", "unidade": "mg/g creat", "referencia": "<30", "status": "elevado" }
+    ],
+    "observacoes": "Diabetes descompensada. Dislipidémia grave. Nefropatia diabética incipiente.",
+    "validadoPor": "Dr. Joaquim Mabjaia",
+    "status": "disponivel"
+  },
+  {
+    "id": "lab-res003",
+    "pedidoId": "lab-req003",
+    "pacienteId": "pac005",
+    "data": "2025-01-14T12:00:00Z",
+    "laboratorio": "Laboratório FranPavic — URGÊNCIAS",
+    "tecnico": "Técnico Carlos",
+    "resultados": [
+      { "exame": "Troponina I", "valor": "0.18", "unidade": "ng/mL", "referencia": "<0.04", "status": "critico" },
+      { "exame": "CK-MB", "valor": "48", "unidade": "U/L", "referencia": "<25", "status": "elevado" },
+      { "exame": "BNP", "valor": "892", "unidade": "pg/mL", "referencia": "<100", "status": "critico" },
+      { "exame": "D-Dímeros", "valor": "0.8", "unidade": "μg/mL", "referencia": "<0.5", "status": "elevado" },
+      { "exame": "Hemoglobina", "valor": "13.1", "unidade": "g/dL", "referencia": "13.5-17.5", "status": "baixo" },
+      { "exame": "TP (INR)", "valor": "1.1", "unidade": "ratio", "referencia": "0.9-1.2", "status": "normal" }
+    ],
+    "observacoes": "URGENTE: Troponina elevada indica lesão miocárdica. BNP muito elevado sugere insuficiência cardíaca. Recomenda-se internamento.",
+    "validadoPor": "Dra. Filomena Nhaca",
+    "status": "disponivel"
+  },
+  {
+    "id": "lab-res004",
+    "pedidoId": "lab-req005",
+    "pacienteId": "pac009",
+    "data": "2025-01-15T10:00:00Z",
+    "laboratorio": "Laboratório FranPavic",
+    "tecnico": "Técnica Rosa",
+    "resultados": [
+      { "exame": "Creatinina", "valor": "4.2", "unidade": "mg/dL", "referencia": "0.7-1.2", "status": "critico" },
+      { "exame": "Ureia", "valor": "145", "unidade": "mg/dL", "referencia": "15-45", "status": "critico" },
+      { "exame": "eGFR", "valor": "14", "unidade": "mL/min/1.73m²", "referencia": ">60", "status": "critico" },
+      { "exame": "Potássio", "valor": "5.8", "unidade": "mEq/L", "referencia": "3.5-5.0", "status": "elevado" },
+      { "exame": "Fósforo", "valor": "6.2", "unidade": "mg/dL", "referencia": "2.5-4.5", "status": "elevado" },
+      { "exame": "Cálcio", "valor": "7.8", "unidade": "mg/dL", "referencia": "8.5-10.5", "status": "baixo" },
+      { "exame": "PTH", "valor": "485", "unidade": "pg/mL", "referencia": "15-65", "status": "critico" },
+      { "exame": "Hemoglobina", "valor": "9.2", "unidade": "g/dL", "referencia": "13.5-17.5", "status": "baixo" },
+      { "exame": "Albumina", "valor": "3.2", "unidade": "g/dL", "referencia": "3.5-5.0", "status": "baixo" },
+      { "exame": "PCR", "valor": "12.4", "unidade": "mg/L", "referencia": "<5", "status": "elevado" }
+    ],
+    "observacoes": "IRC avançada (estádio 5). Hiperparatiroidismo secundário grave. Anemia. Hiperfosfatémia e hipocalcémia. Manter diálise.",
+    "validadoPor": "Dra. Amélia Guambe",
+    "status": "disponivel"
+  }
+]

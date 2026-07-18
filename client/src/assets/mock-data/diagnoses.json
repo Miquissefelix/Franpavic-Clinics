@@ -1,0 +1,17 @@
+[
+  { "id": "diag001", "codigo": "I10", "descricao": "Hipertensão Essencial (Primária)", "categoria": "Doenças do aparelho circulatório" },
+  { "id": "diag002", "codigo": "E11", "descricao": "Diabetes Mellitus Tipo 2", "categoria": "Doenças endócrinas" },
+  { "id": "diag003", "codigo": "J45", "descricao": "Asma", "categoria": "Doenças do aparelho respiratório" },
+  { "id": "diag004", "codigo": "I25", "descricao": "Doença Cardíaca Isquémica Crónica", "categoria": "Doenças do aparelho circulatório" },
+  { "id": "diag005", "codigo": "N18", "descricao": "Doença Renal Crónica (IRC)", "categoria": "Doenças do aparelho geniturinário" },
+  { "id": "diag006", "codigo": "M54", "descricao": "Lombalgia", "categoria": "Doenças do sistema osteoarticular" },
+  { "id": "diag007", "codigo": "Z34", "descricao": "Supervisão de Gravidez Normal", "categoria": "Gravidez, parto e puerpério" },
+  { "id": "diag008", "codigo": "E78", "descricao": "Dislipidémia", "categoria": "Doenças endócrinas" },
+  { "id": "diag009", "codigo": "A90", "descricao": "Febre Dengue", "categoria": "Doenças infecciosas e parasitárias" },
+  { "id": "diag010", "codigo": "B50", "descricao": "Malária por Plasmodium falciparum", "categoria": "Doenças infecciosas e parasitárias" },
+  { "id": "diag011", "codigo": "A00", "descricao": "Cólera", "categoria": "Doenças infecciosas e parasitárias" },
+  { "id": "diag012", "codigo": "J06", "descricao": "Infecção Aguda das Vias Aéreas Superiores", "categoria": "Doenças do aparelho respiratório" },
+  { "id": "diag013", "codigo": "K29", "descricao": "Gastrite e Duodenite", "categoria": "Doenças do aparelho digestivo" },
+  { "id": "diag014", "codigo": "F32", "descricao": "Episódio Depressivo", "categoria": "Perturbações mentais" },
+  { "id": "diag015", "codigo": "G40", "descricao": "Epilepsia", "categoria": "Doenças do sistema nervoso" }
+]

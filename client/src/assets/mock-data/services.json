@@ -1,0 +1,17 @@
+[
+  { "id": "svc001", "nome": "Consulta Clínica Geral", "preco": 1500, "categoria": "Consultas", "duracao": 30, "ativo": true },
+  { "id": "svc002", "nome": "Consulta de Especialidade", "preco": 2000, "categoria": "Consultas", "duracao": 45, "ativo": true },
+  { "id": "svc003", "nome": "Consulta de Cardiologia", "preco": 2500, "categoria": "Consultas", "duracao": 45, "ativo": true },
+  { "id": "svc004", "nome": "Consulta Pré-natal", "preco": 1800, "categoria": "Consultas", "duracao": 40, "ativo": true },
+  { "id": "svc005", "nome": "ECG (Eletrocardiograma)", "preco": 500, "categoria": "Diagnóstico", "duracao": 15, "ativo": true },
+  { "id": "svc006", "nome": "Ecografia Abdominal", "preco": 1200, "categoria": "Diagnóstico", "duracao": 30, "ativo": true },
+  { "id": "svc007", "nome": "Ecografia Obstétrica", "preco": 1500, "categoria": "Diagnóstico", "duracao": 30, "ativo": true },
+  { "id": "svc008", "nome": "Radiografia (1 incidência)", "preco": 700, "categoria": "Diagnóstico", "duracao": 15, "ativo": true },
+  { "id": "svc009", "nome": "Hemograma Completo", "preco": 450, "categoria": "Laboratório", "duracao": 60, "ativo": true },
+  { "id": "svc010", "nome": "Perfil Lipídico", "preco": 600, "categoria": "Laboratório", "duracao": 60, "ativo": true },
+  { "id": "svc011", "nome": "HbA1c (Hemoglobina Glicada)", "preco": 800, "categoria": "Laboratório", "duracao": 60, "ativo": true },
+  { "id": "svc012", "nome": "Função Renal (Ureia + Creatinina)", "preco": 550, "categoria": "Laboratório", "duracao": 60, "ativo": true },
+  { "id": "svc013", "nome": "Troponina I (Urgente)", "preco": 1200, "categoria": "Laboratório", "duracao": 30, "ativo": true },
+  { "id": "svc014", "nome": "Atestado Médico", "preco": 300, "categoria": "Documentos", "duracao": 10, "ativo": true },
+  { "id": "svc015", "nome": "Inalação (Nebulização)", "preco": 350, "categoria": "Procedimentos", "duracao": 20, "ativo": true }
+]

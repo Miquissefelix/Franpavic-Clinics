@@ -1,0 +1,350 @@
+[
+  {
+    "id": "pac001",
+    "numeroPaciente": "FPC-2024-0001",
+    "nome": "João Pedro Nhantumbo",
+    "genero": "masculino",
+    "dataNascimento": "1988-05-12",
+    "bi": "056789123A",
+    "nuit": "100234567",
+    "telefone": "+258 84 500 0005",
+    "email": "joao.nhantumbo@gmail.com",
+    "endereco": "Av. Eduardo Mondlane, 1234, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Sommerschield",
+    "contatoEmergencia": {
+      "nome": "Maria Nhantumbo",
+      "parentesco": "Cônjuge",
+      "telefone": "+258 84 501 0006"
+    },
+    "tipoSanguineo": "O+",
+    "alergias": ["Penicilina", "Ibuprofeno"],
+    "seguro": {
+      "empresa": "INSS",
+      "numero": "INS-2024-001234",
+      "validade": "2025-12-31"
+    },
+    "notasMedicas": "Hipertensão arterial controlada. Uso contínuo de Losartana 50mg.",
+    "status": "ativo",
+    "criadoEm": "2024-03-10T09:00:00Z",
+    "ultimaConsulta": "2025-01-10T14:00:00Z"
+  },
+  {
+    "id": "pac002",
+    "numeroPaciente": "FPC-2024-0002",
+    "nome": "Ana Filomena Cossa",
+    "genero": "feminino",
+    "dataNascimento": "1995-09-23",
+    "bi": "123456789B",
+    "nuit": "200345678",
+    "telefone": "+258 84 600 1001",
+    "email": "ana.cossa@outlook.com",
+    "endereco": "Rua da Resistência, 456, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Alto Maé",
+    "contatoEmergencia": {
+      "nome": "Carlos Cossa",
+      "parentesco": "Pai",
+      "telefone": "+258 84 601 1002"
+    },
+    "tipoSanguineo": "A+",
+    "alergias": ["Sulfonamidas"],
+    "seguro": {
+      "empresa": "AAA Seguros",
+      "numero": "AAA-2023-009876",
+      "validade": "2025-06-30"
+    },
+    "notasMedicas": "Asma leve. Usa salbutamol inalador conforme necessidade.",
+    "status": "ativo",
+    "criadoEm": "2024-04-15T10:30:00Z",
+    "ultimaConsulta": "2025-01-08T09:00:00Z"
+  },
+  {
+    "id": "pac003",
+    "numeroPaciente": "FPC-2024-0003",
+    "nome": "Manuel Augusto Tivane",
+    "genero": "masculino",
+    "dataNascimento": "1975-12-01",
+    "bi": "987654321C",
+    "nuit": "300456789",
+    "telefone": "+258 82 700 2001",
+    "email": "manuel.tivane@yahoo.com",
+    "endereco": "Av. Julius Nyerere, 789, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Polana Cimento",
+    "contatoEmergencia": {
+      "nome": "Rosa Tivane",
+      "parentesco": "Cônjuge",
+      "telefone": "+258 82 701 2002"
+    },
+    "tipoSanguineo": "B+",
+    "alergias": [],
+    "seguro": {
+      "empresa": "Hollard Moçambique",
+      "numero": "HOL-2024-054321",
+      "validade": "2026-01-31"
+    },
+    "notasMedicas": "Diabetes tipo 2. HbA1c controlada. Uso de Metformina 850mg.",
+    "status": "ativo",
+    "criadoEm": "2024-05-20T11:00:00Z",
+    "ultimaConsulta": "2025-01-12T10:00:00Z"
+  },
+  {
+    "id": "pac004",
+    "numeroPaciente": "FPC-2024-0004",
+    "nome": "Esperança Julieta Bila",
+    "genero": "feminino",
+    "dataNascimento": "2002-03-17",
+    "bi": "456123789D",
+    "nuit": "400567890",
+    "telefone": "+258 84 800 3001",
+    "email": "esperanca.bila@gmail.com",
+    "endereco": "Rua Consiglieri Pedroso, 321, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Malhangalene",
+    "contatoEmergencia": {
+      "nome": "Julieta Bila",
+      "parentesco": "Mãe",
+      "telefone": "+258 84 801 3002"
+    },
+    "tipoSanguineo": "AB-",
+    "alergias": ["Aspirina"],
+    "seguro": null,
+    "notasMedicas": "Sem historial relevante.",
+    "status": "ativo",
+    "criadoEm": "2024-06-10T14:00:00Z",
+    "ultimaConsulta": "2024-12-20T11:30:00Z"
+  },
+  {
+    "id": "pac005",
+    "numeroPaciente": "FPC-2024-0005",
+    "nome": "Hélder António Mondlane",
+    "genero": "masculino",
+    "dataNascimento": "1965-07-04",
+    "bi": "789456123E",
+    "nuit": "500678901",
+    "telefone": "+258 82 900 4001",
+    "email": "helder.mondlane@gmail.com",
+    "endereco": "Av. Samora Machel, 567, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Central",
+    "contatoEmergencia": {
+      "nome": "Graça Mondlane",
+      "parentesco": "Filha",
+      "telefone": "+258 82 901 4002"
+    },
+    "tipoSanguineo": "O-",
+    "alergias": ["Codeína"],
+    "seguro": {
+      "empresa": "INSS",
+      "numero": "INS-2023-078901",
+      "validade": "2025-12-31"
+    },
+    "notasMedicas": "Doença cardíaca coronária. Em acompanhamento cardiológico. Uso de Atorvastatina e AAS.",
+    "status": "ativo",
+    "criadoEm": "2024-02-05T08:00:00Z",
+    "ultimaConsulta": "2025-01-14T08:30:00Z"
+  },
+  {
+    "id": "pac006",
+    "numeroPaciente": "FPC-2024-0006",
+    "nome": "Fátima Isabel Mucavel",
+    "genero": "feminino",
+    "dataNascimento": "1990-11-28",
+    "bi": "321654987F",
+    "nuit": "600789012",
+    "telefone": "+258 84 100 5001",
+    "email": "fatima.mucavel@gmail.com",
+    "endereco": "Rua 1 de Maio, 88, Matola",
+    "cidade": "Matola",
+    "bairro": "Matola Rio",
+    "contatoEmergencia": {
+      "nome": "Pedro Mucavel",
+      "parentesco": "Irmão",
+      "telefone": "+258 84 101 5002"
+    },
+    "tipoSanguineo": "A-",
+    "alergias": [],
+    "seguro": {
+      "empresa": "AAA Seguros",
+      "numero": "AAA-2024-012345",
+      "validade": "2025-09-30"
+    },
+    "notasMedicas": "Gravidez de 24 semanas. Pré-natal em curso.",
+    "status": "ativo",
+    "criadoEm": "2024-07-01T09:30:00Z",
+    "ultimaConsulta": "2025-01-13T09:00:00Z"
+  },
+  {
+    "id": "pac007",
+    "numeroPaciente": "FPC-2024-0007",
+    "nome": "Tomás Rafael Buque",
+    "genero": "masculino",
+    "dataNascimento": "1998-02-14",
+    "bi": "654987321G",
+    "nuit": "700890123",
+    "telefone": "+258 82 200 6001",
+    "email": "tomas.buque@gmail.com",
+    "endereco": "Av. Karl Marx, 1100, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Xipamanine",
+    "contatoEmergencia": {
+      "nome": "Rafael Buque",
+      "parentesco": "Pai",
+      "telefone": "+258 82 201 6002"
+    },
+    "tipoSanguineo": "B-",
+    "alergias": ["Lactose"],
+    "seguro": null,
+    "notasMedicas": "Hipertensão primária em tratamento.",
+    "status": "ativo",
+    "criadoEm": "2024-08-12T13:00:00Z",
+    "ultimaConsulta": "2025-01-07T14:00:00Z"
+  },
+  {
+    "id": "pac008",
+    "numeroPaciente": "FPC-2024-0008",
+    "nome": "Lurdes Conceição Zavala",
+    "genero": "feminino",
+    "dataNascimento": "1982-06-19",
+    "bi": "147258369H",
+    "nuit": "800901234",
+    "telefone": "+258 84 300 7001",
+    "email": "lurdes.zavala@gmail.com",
+    "endereco": "Rua Pereira Marinho, 45, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Costa do Sol",
+    "contatoEmergencia": {
+      "nome": "Domingos Zavala",
+      "parentesco": "Cônjuge",
+      "telefone": "+258 84 301 7002"
+    },
+    "tipoSanguineo": "O+",
+    "alergias": [],
+    "seguro": {
+      "empresa": "Hollard Moçambique",
+      "numero": "HOL-2023-098765",
+      "validade": "2025-08-31"
+    },
+    "notasMedicas": "Sem comorbilidades relevantes.",
+    "status": "inativo",
+    "criadoEm": "2024-01-20T10:00:00Z",
+    "ultimaConsulta": "2024-11-05T10:00:00Z"
+  },
+  {
+    "id": "pac009",
+    "numeroPaciente": "FPC-2024-0009",
+    "nome": "Américo José Guambe",
+    "genero": "masculino",
+    "dataNascimento": "1955-04-30",
+    "bi": "369258147I",
+    "nuit": "900012345",
+    "telefone": "+258 82 400 8001",
+    "email": "americo.guambe@yahoo.com",
+    "endereco": "Rua dos Desportistas, 222, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Bairro Central",
+    "contatoEmergencia": {
+      "nome": "Sofia Guambe",
+      "parentesco": "Filha",
+      "telefone": "+258 82 401 8002"
+    },
+    "tipoSanguineo": "A+",
+    "alergias": ["Penicilina", "Contraste iodado"],
+    "seguro": {
+      "empresa": "INSS",
+      "numero": "INS-2024-034567",
+      "validade": "2025-12-31"
+    },
+    "notasMedicas": "Insuficiência renal crónica. Diálise 3x semana. Controlo pressão arterial rigoroso.",
+    "status": "ativo",
+    "criadoEm": "2024-01-10T08:30:00Z",
+    "ultimaConsulta": "2025-01-15T07:00:00Z"
+  },
+  {
+    "id": "pac010",
+    "numeroPaciente": "FPC-2024-0010",
+    "nome": "Sónia Paulina Ngwenya",
+    "genero": "feminino",
+    "dataNascimento": "2010-08-05",
+    "bi": "258147369J",
+    "nuit": null,
+    "telefone": "+258 84 500 9001",
+    "email": null,
+    "endereco": "Av. Agostinho Neto, 678, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Sommerschield II",
+    "contatoEmergencia": {
+      "nome": "Paulina Ngwenya",
+      "parentesco": "Mãe",
+      "telefone": "+258 84 501 9002"
+    },
+    "tipoSanguineo": "AB+",
+    "alergias": [],
+    "seguro": {
+      "empresa": "AAA Seguros",
+      "numero": "AAA-2024-056789",
+      "validade": "2026-03-31"
+    },
+    "notasMedicas": "Criança. Vacinação em dia. Asma infantil controlada.",
+    "status": "ativo",
+    "criadoEm": "2024-09-05T11:00:00Z",
+    "ultimaConsulta": "2024-12-10T10:30:00Z"
+  },
+  {
+    "id": "pac011",
+    "numeroPaciente": "FPC-2024-0011",
+    "nome": "Dércio Filipe Langa",
+    "genero": "masculino",
+    "dataNascimento": "1979-01-22",
+    "bi": "741852963K",
+    "nuit": "110123456",
+    "telefone": "+258 82 600 0011",
+    "email": "dercio.langa@gmail.com",
+    "endereco": "Bairro da Coop, Lote 45, Matola",
+    "cidade": "Matola",
+    "bairro": "Coop",
+    "contatoEmergencia": {
+      "nome": "Anita Langa",
+      "parentesco": "Cônjuge",
+      "telefone": "+258 82 601 0012"
+    },
+    "tipoSanguineo": "O+",
+    "alergias": ["AINE's"],
+    "seguro": null,
+    "notasMedicas": "Lombalgia crónica. Fisioterapia em curso.",
+    "status": "ativo",
+    "criadoEm": "2024-10-01T14:30:00Z",
+    "ultimaConsulta": "2025-01-09T15:00:00Z"
+  },
+  {
+    "id": "pac012",
+    "numeroPaciente": "FPC-2024-0012",
+    "nome": "Celeste Mariana Fumo",
+    "genero": "feminino",
+    "dataNascimento": "1968-10-14",
+    "bi": "852963741L",
+    "nuit": "120234567",
+    "telefone": "+258 84 700 0012",
+    "email": "celeste.fumo@gmail.com",
+    "endereco": "Av. da Zimbabwe, 90, Maputo",
+    "cidade": "Maputo",
+    "bairro": "Alto Maé B",
+    "contatoEmergencia": {
+      "nome": "Jorge Fumo",
+      "parentesco": "Filho",
+      "telefone": "+258 84 701 0013"
+    },
+    "tipoSanguineo": "B+",
+    "alergias": [],
+    "seguro": {
+      "empresa": "INSS",
+      "numero": "INS-2023-067890",
+      "validade": "2025-12-31"
+    },
+    "notasMedicas": "Osteoporose. Suplementação de cálcio e vitamina D.",
+    "status": "ativo",
+    "criadoEm": "2024-11-15T09:00:00Z",
+    "ultimaConsulta": "2025-01-06T11:00:00Z"
+  }
+]

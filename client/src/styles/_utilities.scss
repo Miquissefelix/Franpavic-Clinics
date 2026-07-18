@@ -1,0 +1,193 @@
+// =============================================================
+// UTILITÁRIOS — FranPavic Clinics
+// Classes utilitárias globais
+// =============================================================
+
+// ─── Espaçamento ─────────────────────────────────────────────
+.p-0  { padding: 0 !important; }
+.p-1  { padding: var(--spacing-1) !important; }
+.p-2  { padding: var(--spacing-2) !important; }
+.p-3  { padding: var(--spacing-3) !important; }
+.p-4  { padding: var(--spacing-4) !important; }
+.p-6  { padding: var(--spacing-6) !important; }
+.p-8  { padding: var(--spacing-8) !important; }
+
+.m-0  { margin: 0 !important; }
+.mt-1 { margin-top: var(--spacing-1) !important; }
+.mt-2 { margin-top: var(--spacing-2) !important; }
+.mt-4 { margin-top: var(--spacing-4) !important; }
+.mb-2 { margin-bottom: var(--spacing-2) !important; }
+.mb-4 { margin-bottom: var(--spacing-4) !important; }
+.mb-6 { margin-bottom: var(--spacing-6) !important; }
+.mr-2 { margin-right: var(--spacing-2) !important; }
+.ml-2 { margin-left: var(--spacing-2) !important; }
+.gap-2 { gap: var(--spacing-2) !important; }
+.gap-4 { gap: var(--spacing-4) !important; }
+
+// ─── Display / Flex ──────────────────────────────────────────
+.flex          { display: flex !important; }
+.flex-col      { flex-direction: column !important; }
+.flex-row      { flex-direction: row !important; }
+.flex-wrap     { flex-wrap: wrap !important; }
+.items-center  { align-items: center !important; }
+.items-start   { align-items: flex-start !important; }
+.justify-between { justify-content: space-between !important; }
+.justify-center  { justify-content: center !important; }
+.justify-end     { justify-content: flex-end !important; }
+.flex-1        { flex: 1 !important; }
+.flex-shrink-0 { flex-shrink: 0 !important; }
+.grid          { display: grid !important; }
+
+// ─── Bordas Arredondadas ─────────────────────────────────────
+.rounded-xs   { border-radius: var(--border-radius-xs) !important; }
+.rounded-sm   { border-radius: var(--border-radius-sm) !important; }
+.rounded-md   { border-radius: var(--border-radius-md) !important; }
+.rounded-lg   { border-radius: var(--border-radius-lg) !important; }
+.rounded-xl   { border-radius: var(--border-radius-xl) !important; }
+.rounded-full { border-radius: var(--border-radius-full) !important; }
+
+// ─── Sombras ─────────────────────────────────────────────────
+.shadow-sm  { box-shadow: var(--shadow-sm) !important; }
+.shadow-md  { box-shadow: var(--shadow-md) !important; }
+.shadow-lg  { box-shadow: var(--shadow-lg) !important; }
+.shadow-xl  { box-shadow: var(--shadow-xl) !important; }
+.shadow-none { box-shadow: none !important; }
+
+// ─── Overflow ────────────────────────────────────────────────
+.overflow-hidden { overflow: hidden !important; }
+.overflow-auto   { overflow: auto !important; }
+.truncate        { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+// ─── Cursor ──────────────────────────────────────────────────
+.cursor-pointer { cursor: pointer !important; }
+
+// ─── Opacidade / Visibilidade ────────────────────────────────
+.opacity-50 { opacity: 0.5 !important; }
+.hidden     { display: none !important; }
+
+// ─── Largura / Altura ────────────────────────────────────────
+.w-full  { width: 100% !important; }
+.h-full  { height: 100% !important; }
+
+// ─── Cards & Superfícies ─────────────────────────────────────
+.card {
+  background: var(--surface-card);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: var(--transition-normal);
+}
+
+.card-hover:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px);
+}
+
+// ─── Chip / Badge ────────────────────────────────────────────
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.6;
+
+  &.chip-primary   { background: var(--color-primary-100); color: var(--color-primary-700); }
+  &.chip-success   { background: var(--color-success-100); color: var(--color-success-700); }
+  &.chip-warning   { background: var(--color-warning-100); color: var(--color-warning-700); }
+  &.chip-danger    { background: var(--color-danger-100);  color: var(--color-danger-700); }
+  &.chip-secondary { background: var(--color-secondary-100); color: var(--color-secondary-700); }
+  &.chip-neutral   { background: var(--color-neutral-100); color: var(--color-neutral-600); }
+
+  // Triagem
+  &.chip-vermelho  { background: #fee2e2; color: #991b1b; }
+  &.chip-laranja   { background: #ffedd5; color: #9a3412; }
+  &.chip-amarelo   { background: #fef9c3; color: #854d0e; }
+  &.chip-verde     { background: #dcfce7; color: #166534; }
+  &.chip-azul      { background: #dbeafe; color: #1e40af; }
+}
+
+// ─── Divider ─────────────────────────────────────────────────
+.divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: var(--spacing-4) 0;
+}
+
+// ─── Skeleton Loading ────────────────────────────────────────
+@keyframes shimmer {
+  0%   { background-position: -1000px 0; }
+  100% { background-position:  1000px 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    to right,
+    var(--color-neutral-200) 4%,
+    var(--color-neutral-100) 25%,
+    var(--color-neutral-200) 36%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 1.8s infinite linear;
+  border-radius: var(--border-radius-sm);
+}
+
+// ─── Page Transition ─────────────────────────────────────────
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-enter {
+  animation: fadeInUp 0.3s ease forwards;
+}
+
+// ─── Scrollbar Custom ────────────────────────────────────────
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--surface-background); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-300);
+  border-radius: 99px;
+
+  &:hover { background: var(--color-neutral-400); }
+}
+
+// ─── Material Override ───────────────────────────────────────
+.mat-mdc-card {
+  background: var(--surface-card) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.mat-mdc-snack-bar-container {
+  border-radius: var(--border-radius-md) !important;
+}
+
+// ─── Responsive Breakpoints ──────────────────────────────────
+// Mobile first
+// sm: 640px
+// md: 768px
+// lg: 1024px
+// xl: 1280px
+// 2xl: 1536px
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 { grid-template-columns: repeat(1, 1fr) !important; }
+}
+
+@media (max-width: 1024px) {
+  .hide-tablet { display: none !important; }
+}
+
+@media (min-width: 769px) {
+  .hide-desktop { display: none !important; }
+}

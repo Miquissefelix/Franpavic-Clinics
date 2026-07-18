@@ -1,0 +1,69 @@
+[
+  {
+    "id": "u001",
+    "nome": "Dr. Carlos Administrador",
+    "email": "admin@franpavic.co.mz",
+    "senha": "admin123",
+    "perfil": "administrador",
+    "avatar": null,
+    "telefone": "+258 84 100 0001",
+    "departamento": "Administração",
+    "ativo": true,
+    "ultimoAcesso": "2025-01-15T08:30:00Z",
+    "criadoEm": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "u002",
+    "nome": "Dr. António Machava",
+    "email": "medico@franpavic.co.mz",
+    "senha": "medico123",
+    "perfil": "medico",
+    "avatar": null,
+    "telefone": "+258 84 200 0002",
+    "departamento": "Clínica Geral",
+    "especialidadeId": "esp001",
+    "medicoId": "med001",
+    "ativo": true,
+    "ultimoAcesso": "2025-01-15T07:45:00Z",
+    "criadoEm": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "u003",
+    "nome": "Maria Conceição Sitoe",
+    "email": "recepcao@franpavic.co.mz",
+    "senha": "recepcao123",
+    "perfil": "recepcionista",
+    "avatar": null,
+    "telefone": "+258 84 300 0003",
+    "departamento": "Recepção",
+    "ativo": true,
+    "ultimoAcesso": "2025-01-15T07:00:00Z",
+    "criadoEm": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "u004",
+    "nome": "Enfermeira Beatriz Cumbe",
+    "email": "enfermeira@franpavic.co.mz",
+    "senha": "enfermeira123",
+    "perfil": "enfermeira",
+    "avatar": null,
+    "telefone": "+258 84 400 0004",
+    "departamento": "Enfermagem",
+    "ativo": true,
+    "ultimoAcesso": "2025-01-15T06:50:00Z",
+    "criadoEm": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "u005",
+    "nome": "João Pedro Nhantumbo",
+    "email": "paciente@franpavic.co.mz",
+    "senha": "paciente123",
+    "perfil": "paciente",
+    "avatar": null,
+    "telefone": "+258 84 500 0005",
+    "pacienteId": "pac001",
+    "ativo": true,
+    "ultimoAcesso": "2025-01-14T15:00:00Z",
+    "criadoEm": "2024-03-10T00:00:00Z"
+  }
+]

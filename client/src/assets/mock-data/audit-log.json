@@ -1,0 +1,12 @@
+[
+  { "id": "log001", "acao": "CRIAR", "descricao": "Paciente João Nhantumbo registado (FPC-2025-0012)", "utilizador": "Maria Sitoe", "perfil": "recepcao", "data": "2025-01-15T07:10:00Z", "ip": "192.168.1.10" },
+  { "id": "log002", "acao": "CRIAR", "descricao": "Triagem realizada — Celeste Fumo — Escala Amarelo", "utilizador": "Beatriz Cumbe", "perfil": "enfermagem", "data": "2025-01-15T07:45:00Z", "ip": "192.168.1.11" },
+  { "id": "log003", "acao": "CRIAR", "descricao": "Consulta concluída — CID I10 Hipertensão — João Nhantumbo", "utilizador": "Dr. António Machava", "perfil": "medico", "data": "2025-01-15T08:35:00Z", "ip": "192.168.1.12" },
+  { "id": "log004", "acao": "EDITAR", "descricao": "Dados do paciente atualizados — Américo Guambe", "utilizador": "Maria Sitoe", "perfil": "recepcao", "data": "2025-01-15T08:50:00Z", "ip": "192.168.1.10" },
+  { "id": "log005", "acao": "CRIAR", "descricao": "Pagamento registado — 1.500 MZN — João Nhantumbo", "utilizador": "Maria Sitoe", "perfil": "recepcao", "data": "2025-01-15T09:00:00Z", "ip": "192.168.1.10" },
+  { "id": "log006", "acao": "VER",   "descricao": "Relatório de receita de Janeiro 2025 consultado", "utilizador": "Dr. Carlos Administrador", "perfil": "admin", "data": "2025-01-15T09:15:00Z", "ip": "192.168.1.5" },
+  { "id": "log007", "acao": "LOGIN", "descricao": "Sessão iniciada com sucesso", "utilizador": "Beatriz Cumbe", "perfil": "enfermagem", "data": "2025-01-15T06:30:00Z", "ip": "192.168.1.11" },
+  { "id": "log008", "acao": "EXCLUIR", "descricao": "Consulta cancelada — paciente não compareceu", "utilizador": "Maria Sitoe", "perfil": "recepcao", "data": "2025-01-15T10:00:00Z", "ip": "192.168.1.10" },
+  { "id": "log009", "acao": "CRIAR", "descricao": "Prescrição emitida — Amoxicilina 500mg", "utilizador": "Dr. António Machava", "perfil": "medico", "data": "2025-01-15T10:30:00Z", "ip": "192.168.1.12" },
+  { "id": "log010", "acao": "VER",   "descricao": "Histórico clínico consultado — Américo Guambe", "utilizador": "Dr. António Machava", "perfil": "medico", "data": "2025-01-15T11:00:00Z", "ip": "192.168.1.12" }
+]

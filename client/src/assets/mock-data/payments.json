@@ -1,0 +1,193 @@
+[
+  {
+    "id": "pay001",
+    "pacienteId": "pac001",
+    "consultaId": "con002",
+    "data": "2025-01-10T15:00:00Z",
+    "descricao": "Consulta de Clínica Geral",
+    "itens": [
+      { "descricao": "Consulta Médica", "quantidade": 1, "valorUnitario": 1500, "total": 1500 }
+    ],
+    "subtotal": 1500,
+    "desconto": 0,
+    "total": 1500,
+    "metodoPagamento": "transferência",
+    "estado": "pago",
+    "recibo": "rec001",
+    "operadorId": "u003",
+    "criadoEm": "2025-01-10T15:00:00Z"
+  },
+  {
+    "id": "pay002",
+    "pacienteId": "pac002",
+    "consultaId": "con002",
+    "data": "2025-01-08T10:00:00Z",
+    "descricao": "Consulta de Clínica Geral - Urgência",
+    "itens": [
+      { "descricao": "Consulta Médica de Urgência", "quantidade": 1, "valorUnitario": 2000, "total": 2000 },
+      { "descricao": "Inalação de Salbutamol", "quantidade": 1, "valorUnitario": 350, "total": 350 }
+    ],
+    "subtotal": 2350,
+    "desconto": 0,
+    "total": 2350,
+    "metodoPagamento": "numerário",
+    "estado": "pago",
+    "recibo": "rec002",
+    "operadorId": "u003",
+    "criadoEm": "2025-01-08T10:00:00Z"
+  },
+  {
+    "id": "pay003",
+    "pacienteId": "pac003",
+    "consultaId": "con003",
+    "data": "2025-01-12T11:00:00Z",
+    "descricao": "Consulta de Endocrinologia + Exames",
+    "itens": [
+      { "descricao": "Consulta Médica - Endocrinologia", "quantidade": 1, "valorUnitario": 2000, "total": 2000 },
+      { "descricao": "HbA1c", "quantidade": 1, "valorUnitario": 800, "total": 800 },
+      { "descricao": "Perfil Lipídico", "quantidade": 1, "valorUnitario": 600, "total": 600 }
+    ],
+    "subtotal": 3400,
+    "desconto": 340,
+    "total": 3060,
+    "metodoPagamento": "seguro",
+    "seguradora": "Hollard Moçambique",
+    "estado": "pago",
+    "recibo": "rec003",
+    "operadorId": "u003",
+    "criadoEm": "2025-01-12T11:00:00Z"
+  },
+  {
+    "id": "pay004",
+    "pacienteId": "pac005",
+    "consultaId": "con005",
+    "data": "2025-01-14T11:00:00Z",
+    "descricao": "Consulta de Cardiologia + Exames Urgentes",
+    "itens": [
+      { "descricao": "Consulta Médica - Cardiologia", "quantidade": 1, "valorUnitario": 2500, "total": 2500 },
+      { "descricao": "ECG (Eletrocardiograma)", "quantidade": 1, "valorUnitario": 500, "total": 500 },
+      { "descricao": "Enzimas Cardíacas (Troponina, CK-MB)", "quantidade": 1, "valorUnitario": 1200, "total": 1200 }
+    ],
+    "subtotal": 4200,
+    "desconto": 0,
+    "total": 4200,
+    "metodoPagamento": "seguro",
+    "seguradora": "INSS",
+    "estado": "pago",
+    "recibo": "rec004",
+    "operadorId": "u003",
+    "criadoEm": "2025-01-14T11:00:00Z"
+  },
+  {
+    "id": "pay005",
+    "pacienteId": "pac006",
+    "consultaId": "con006",
+    "data": "2025-01-13T10:00:00Z",
+    "descricao": "Consulta Pré-natal + Exames",
+    "itens": [
+      { "descricao": "Consulta Pré-natal", "quantidade": 1, "valorUnitario": 1800, "total": 1800 },
+      { "descricao": "Ecografia Obstétrica", "quantidade": 1, "valorUnitario": 1500, "total": 1500 }
+    ],
+    "subtotal": 3300,
+    "desconto": 330,
+    "total": 2970,
+    "metodoPagamento": "seguro",
+    "seguradora": "AAA Seguros",
+    "estado": "pago",
+    "recibo": "rec005",
+    "operadorId": "u003",
+    "criadoEm": "2025-01-13T10:00:00Z"
+  },
+  {
+    "id": "pay006",
+    "pacienteId": "pac009",
+    "consultaId": "con008",
+    "data": "2025-01-15T08:00:00Z",
+    "descricao": "Consulta de Medicina Interna",
+    "itens": [
+      { "descricao": "Consulta Médica - Medicina Interna", "quantidade": 1, "valorUnitario": 2000, "total": 2000 }
+    ],
+    "subtotal": 2000,
+    "desconto": 0,
+    "total": 2000,
+    "metodoPagamento": "seguro",
+    "seguradora": "INSS",
+    "estado": "pendente",
+    "recibo": null,
+    "operadorId": null,
+    "criadoEm": "2025-01-15T08:00:00Z"
+  },
+  {
+    "id": "pay007",
+    "pacienteId": "pac011",
+    "consultaId": "con010",
+    "data": "2025-01-09T16:00:00Z",
+    "descricao": "Consulta de Ortopedia + Radiografia",
+    "itens": [
+      { "descricao": "Consulta Médica - Ortopedia", "quantidade": 1, "valorUnitario": 2000, "total": 2000 },
+      { "descricao": "Radiografia Coluna Lombar (AP + Lateral)", "quantidade": 1, "valorUnitario": 900, "total": 900 }
+    ],
+    "subtotal": 2900,
+    "desconto": 0,
+    "total": 2900,
+    "metodoPagamento": "numerário",
+    "estado": "pago",
+    "recibo": "rec006",
+    "operadorId": "u003",
+    "criadoEm": "2025-01-09T16:00:00Z"
+  },
+  {
+    "id": "pay008",
+    "pacienteId": "pac004",
+    "consultaId": "con004",
+    "data": "2025-01-15T10:00:00Z",
+    "descricao": "Consulta de Ginecologia",
+    "itens": [
+      { "descricao": "Consulta Médica - Ginecologia", "quantidade": 1, "valorUnitario": 1800, "total": 1800 }
+    ],
+    "subtotal": 1800,
+    "desconto": 0,
+    "total": 1800,
+    "metodoPagamento": "numerário",
+    "estado": "pendente",
+    "recibo": null,
+    "operadorId": null,
+    "criadoEm": "2025-01-15T10:00:00Z"
+  },
+  {
+    "id": "pay009",
+    "pacienteId": "pac007",
+    "consultaId": "con007",
+    "data": "2025-01-15T00:00:00Z",
+    "descricao": "Consulta Cancelada",
+    "itens": [
+      { "descricao": "Taxa de Cancelamento", "quantidade": 1, "valorUnitario": 500, "total": 500 }
+    ],
+    "subtotal": 500,
+    "desconto": 500,
+    "total": 0,
+    "metodoPagamento": null,
+    "estado": "cancelado",
+    "recibo": null,
+    "operadorId": "u003",
+    "criadoEm": "2025-01-15T10:05:00Z"
+  },
+  {
+    "id": "pay010",
+    "pacienteId": "pac012",
+    "consultaId": "con011",
+    "data": "2025-01-17T00:00:00Z",
+    "descricao": "Consulta de Medicina Interna",
+    "itens": [
+      { "descricao": "Consulta Médica - Medicina Interna", "quantidade": 1, "valorUnitario": 2000, "total": 2000 }
+    ],
+    "subtotal": 2000,
+    "desconto": 0,
+    "total": 2000,
+    "metodoPagamento": null,
+    "estado": "pendente",
+    "recibo": null,
+    "operadorId": null,
+    "criadoEm": "2025-01-15T09:00:00Z"
+  }
+]

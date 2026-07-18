@@ -1,0 +1,207 @@
+[
+  {
+    "id": "med001",
+    "nome": "Dr. António Machava",
+    "crm": "OM-2456",
+    "especialidadeId": "esp001",
+    "especialidade": "Clínica Geral",
+    "telefone": "+258 84 200 0002",
+    "email": "antonio.machava@franpavic.co.mz",
+    "genero": "masculino",
+    "biografia": "Médico com 15 anos de experiência em clínica geral e medicina preventiva. Formado pela UEM, pós-graduação em Portugal.",
+    "consultas": 1245,
+    "avaliacao": 4.8,
+    "horario": {
+      "segunda": ["08:00", "17:00"],
+      "terca": ["08:00", "17:00"],
+      "quarta": ["08:00", "17:00"],
+      "quinta": ["08:00", "17:00"],
+      "sexta": ["08:00", "13:00"]
+    },
+    "duracaoConsulta": 30,
+    "ativo": true
+  },
+  {
+    "id": "med002",
+    "nome": "Dra. Filomena Nhaca",
+    "crm": "OM-3102",
+    "especialidadeId": "esp002",
+    "especialidade": "Cardiologia",
+    "telefone": "+258 84 210 0003",
+    "email": "filomena.nhaca@franpavic.co.mz",
+    "genero": "feminino",
+    "biografia": "Cardiologista especialista em insuficiência cardíaca e arritmias. Doutoramento em Lisboa.",
+    "consultas": 892,
+    "avaliacao": 4.9,
+    "horario": {
+      "segunda": ["09:00", "16:00"],
+      "quarta": ["09:00", "16:00"],
+      "sexta": ["09:00", "13:00"]
+    },
+    "duracaoConsulta": 45,
+    "ativo": true
+  },
+  {
+    "id": "med003",
+    "nome": "Dr. Roberto Cuna",
+    "crm": "OM-2789",
+    "especialidadeId": "esp003",
+    "especialidade": "Pediatria",
+    "telefone": "+258 82 220 0004",
+    "email": "roberto.cuna@franpavic.co.mz",
+    "genero": "masculino",
+    "biografia": "Pediatra com enfoque em doenças tropicais e nutrição infantil. 12 anos de experiência.",
+    "consultas": 2103,
+    "avaliacao": 4.7,
+    "horario": {
+      "segunda": ["08:00", "17:00"],
+      "terca": ["08:00", "17:00"],
+      "quarta": ["08:00", "17:00"],
+      "quinta": ["08:00", "17:00"]
+    },
+    "duracaoConsulta": 30,
+    "ativo": true
+  },
+  {
+    "id": "med004",
+    "nome": "Dra. Celina Sithole",
+    "crm": "OM-3456",
+    "especialidadeId": "esp004",
+    "especialidade": "Ginecologia e Obstetrícia",
+    "telefone": "+258 84 230 0005",
+    "email": "celina.sithole@franpavic.co.mz",
+    "genero": "feminino",
+    "biografia": "Ginecologista-obstetra especializada em gravidez de alto risco e laparoscopia ginecológica.",
+    "consultas": 1567,
+    "avaliacao": 4.9,
+    "horario": {
+      "terca": ["08:00", "17:00"],
+      "quarta": ["08:00", "17:00"],
+      "quinta": ["08:00", "17:00"],
+      "sexta": ["08:00", "14:00"]
+    },
+    "duracaoConsulta": 40,
+    "ativo": true
+  },
+  {
+    "id": "med005",
+    "nome": "Dr. Mário Tembe",
+    "crm": "OM-2345",
+    "especialidadeId": "esp005",
+    "especialidade": "Ortopedia",
+    "telefone": "+258 82 240 0006",
+    "email": "mario.tembe@franpavic.co.mz",
+    "genero": "masculino",
+    "biografia": "Ortopedista com especialização em cirurgia do joelho e coluna vertebral.",
+    "consultas": 754,
+    "avaliacao": 4.6,
+    "horario": {
+      "segunda": ["08:00", "16:00"],
+      "quarta": ["08:00", "16:00"],
+      "quinta": ["08:00", "16:00"]
+    },
+    "duracaoConsulta": 45,
+    "ativo": true
+  },
+  {
+    "id": "med006",
+    "nome": "Dra. Sandra Uamusse",
+    "crm": "OM-3678",
+    "especialidadeId": "esp006",
+    "especialidade": "Dermatologia",
+    "telefone": "+258 84 250 0007",
+    "email": "sandra.uamusse@franpavic.co.mz",
+    "genero": "feminino",
+    "biografia": "Dermatologista com experiência em dermatoses tropicais, vitiligo e cirurgia dermatológica.",
+    "consultas": 1089,
+    "avaliacao": 4.8,
+    "horario": {
+      "segunda": ["09:00", "17:00"],
+      "terca": ["09:00", "17:00"],
+      "sexta": ["09:00", "13:00"]
+    },
+    "duracaoConsulta": 30,
+    "ativo": true
+  },
+  {
+    "id": "med007",
+    "nome": "Dr. Paulo Zunguza",
+    "crm": "OM-2901",
+    "especialidadeId": "esp007",
+    "especialidade": "Neurologia",
+    "telefone": "+258 82 260 0008",
+    "email": "paulo.zunguza@franpavic.co.mz",
+    "genero": "masculino",
+    "biografia": "Neurologista especializado em epilepsia, AVC e doenças neurodegenerativas.",
+    "consultas": 678,
+    "avaliacao": 4.7,
+    "horario": {
+      "terca": ["09:00", "16:00"],
+      "quinta": ["09:00", "16:00"]
+    },
+    "duracaoConsulta": 60,
+    "ativo": true
+  },
+  {
+    "id": "med008",
+    "nome": "Dra. Amélia Guambe",
+    "crm": "OM-3234",
+    "especialidadeId": "esp008",
+    "especialidade": "Medicina Interna",
+    "telefone": "+258 84 270 0009",
+    "email": "amelia.guambe@franpavic.co.mz",
+    "genero": "feminino",
+    "biografia": "Internista com 18 anos de experiência em doenças sistémicas complexas.",
+    "consultas": 1890,
+    "avaliacao": 4.9,
+    "horario": {
+      "segunda": ["08:00", "17:00"],
+      "terca": ["08:00", "17:00"],
+      "quarta": ["08:00", "17:00"],
+      "quinta": ["08:00", "17:00"],
+      "sexta": ["08:00", "12:00"]
+    },
+    "duracaoConsulta": 45,
+    "ativo": true
+  },
+  {
+    "id": "med009",
+    "nome": "Dr. Joaquim Mabjaia",
+    "crm": "OM-3012",
+    "especialidadeId": "esp009",
+    "especialidade": "Endocrinologia",
+    "telefone": "+258 82 280 0010",
+    "email": "joaquim.mabjaia@franpavic.co.mz",
+    "genero": "masculino",
+    "biografia": "Endocrinologista focado em diabetes, tireoide e obesidade.",
+    "consultas": 934,
+    "avaliacao": 4.8,
+    "horario": {
+      "segunda": ["09:00", "16:00"],
+      "quarta": ["09:00", "16:00"],
+      "sexta": ["09:00", "13:00"]
+    },
+    "duracaoConsulta": 45,
+    "ativo": true
+  },
+  {
+    "id": "med010",
+    "nome": "Dra. Graça Matsinha",
+    "crm": "OM-4001",
+    "especialidadeId": "esp010",
+    "especialidade": "Psiquiatria",
+    "telefone": "+258 84 290 0011",
+    "email": "graca.matsinha@franpavic.co.mz",
+    "genero": "feminino",
+    "biografia": "Psiquiatra especializada em depressão, ansiedade e psicoses. Terapia cognitivo-comportamental.",
+    "consultas": 543,
+    "avaliacao": 4.9,
+    "horario": {
+      "terca": ["09:00", "17:00"],
+      "quarta": ["09:00", "17:00"],
+      "quinta": ["09:00", "17:00"]
+    },
+    "duracaoConsulta": 60,
+    "ativo": true
+  }
+]

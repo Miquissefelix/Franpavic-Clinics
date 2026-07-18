@@ -1,0 +1,22 @@
+[
+  { "id": "med-001", "nome": "Losartana Potássica", "dose": "50mg", "forma": "Comprimido", "classe": "Anti-hipertensivo (ARA II)" },
+  { "id": "med-002", "nome": "Metformina", "dose": "850mg", "forma": "Comprimido", "classe": "Antidiabético Oral" },
+  { "id": "med-003", "nome": "Atorvastatina", "dose": "20mg", "forma": "Comprimido", "classe": "Estatina (Hipolipemiante)" },
+  { "id": "med-004", "nome": "Atorvastatina", "dose": "40mg", "forma": "Comprimido", "classe": "Estatina (Hipolipemiante)" },
+  { "id": "med-005", "nome": "Atorvastatina", "dose": "80mg", "forma": "Comprimido", "classe": "Estatina (Hipolipemiante)" },
+  { "id": "med-006", "nome": "Salbutamol (Ventolin)", "dose": "100mcg", "forma": "Inalador MDI", "classe": "Broncodilatador (SABA)" },
+  { "id": "med-007", "nome": "Beclometasona", "dose": "250mcg", "forma": "Inalador MDI", "classe": "Corticosteroide Inalatório" },
+  { "id": "med-008", "nome": "AAS", "dose": "100mg", "forma": "Comprimido", "classe": "Antiagregante Plaquetário" },
+  { "id": "med-009", "nome": "Metoprolol", "dose": "50mg", "forma": "Comprimido", "classe": "Beta-bloqueador" },
+  { "id": "med-010", "nome": "Furosemida", "dose": "40mg", "forma": "Comprimido", "classe": "Diurético de Ansa" },
+  { "id": "med-011", "nome": "Amlodipina", "dose": "10mg", "forma": "Comprimido", "classe": "Bloqueador Canal de Cálcio" },
+  { "id": "med-012", "nome": "Hidroclorotiazida", "dose": "12.5mg", "forma": "Comprimido", "classe": "Diurético Tiazídico" },
+  { "id": "med-013", "nome": "Omeprazol", "dose": "20mg", "forma": "Cápsula", "classe": "Inibidor da Bomba de Protões" },
+  { "id": "med-014", "nome": "Ibuprofeno", "dose": "600mg", "forma": "Comprimido", "classe": "AINE" },
+  { "id": "med-015", "nome": "Ácido Fólico", "dose": "5mg", "forma": "Comprimido", "classe": "Suplemento Vitamínico" },
+  { "id": "med-016", "nome": "Sulfato Ferroso", "dose": "300mg", "forma": "Comprimido", "classe": "Suplemento de Ferro" },
+  { "id": "med-017", "nome": "Carbonato de Cálcio", "dose": "500mg", "forma": "Comprimido", "classe": "Suplemento de Cálcio" },
+  { "id": "med-018", "nome": "Artemisinina + Lumefantrina", "dose": "20mg+120mg", "forma": "Comprimido", "classe": "Antimalárico (ACT)" },
+  { "id": "med-019", "nome": "Amoxicilina", "dose": "500mg", "forma": "Cápsula", "classe": "Antibiótico (Penicilina)" },
+  { "id": "med-020", "nome": "Eritropoietina", "dose": "4000 UI", "forma": "Injectável SC", "classe": "Factor Estimulante de Eritrócitos" }
+]
