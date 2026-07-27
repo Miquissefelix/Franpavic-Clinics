@@ -74,8 +74,8 @@ import { ConsultaService } from '../../../core/services/consulta.service';
               <th mat-header-cell *matHeaderCellDef> Data/Hora </th>
               <td mat-cell *matCellDef="let consulta"> 
                 <div class="datetime-cell">
-                  <span class="date">{{ consulta.hora | date:'dd/MM/yyyy' }}</span>
-                  <span class="time">{{ consulta.hora | date:'HH:mm' }}</span>
+                  <span class="date">{{ consulta.data | date:'dd/MM/yyyy' }}</span>
+                  <span class="time">{{ consulta.hora }}</span>
                 </div>
               </td>
             </ng-container>
@@ -290,8 +290,8 @@ export class ListaConsultasComponent implements OnInit {
     if (this.selectedFilter !== 'Todas') {
       const statusMap: any = {
         'Agendadas': 'agendada',
-        'Em Curso': 'em curso',
-        'Concluídas': 'concluída',
+        'Em Curso': 'em-curso',
+        'Concluídas': 'concluida',
         'Canceladas': 'cancelada'
       };
       

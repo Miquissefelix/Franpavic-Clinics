@@ -88,7 +88,7 @@ import { ConsultaService } from '../../../core/services/consulta.service';
                     <div class="details">
                       <span class="detail-item">
                         <mat-icon>schedule</mat-icon>
-                        Agendado para: {{ paciente.hora | date:'HH:mm' }}
+                        Agendado para: {{ paciente.hora }}
                       </span>
                       <span class="detail-item">
                         <mat-icon>medical_services</mat-icon>

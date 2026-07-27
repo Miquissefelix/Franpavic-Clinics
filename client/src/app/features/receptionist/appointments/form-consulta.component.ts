@@ -15,8 +15,18 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MedicoService } from '../../../core/services/medico.service';
 import { PacienteService } from '../../../core/services/paciente.service';
 import { ConsultaService } from '../../../core/services/consulta.service';
-import { Consulta, Especialidade, Medico, Paciente } from '../../../core/models';
-import { debounceTime, distinctUntilChanged, switchMap, startWith } from 'rxjs/operators';
+import {
+  Consulta,
+  Especialidade,
+  Medico,
+  Paciente,
+} from '../../../core/models';
+import {
+  debounceTime,
+  distinctUntilChanged,
+  switchMap,
+  startWith,
+} from 'rxjs/operators';
 import { of } from 'rxjs';
 
 @Component({
@@ -34,7 +44,7 @@ import { of } from 'rxjs';
     MatDatepickerModule,
     MatNativeDateModule,
     MatCardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ],
   template: `
     <div class="page-container">
@@ -46,20 +56,22 @@ import { of } from 'rxjs';
       </div>
 
       <mat-stepper [linear]="true" #stepper class="custom-stepper">
-        
         <!-- Passo 1: Especialidade -->
         <mat-step [stepControl]="especialidadeForm">
           <form [formGroup]="especialidadeForm">
             <ng-template matStepLabel>Especialidade</ng-template>
             <div class="step-content">
               <h3>Selecione a Especialidade</h3>
-              
+
               <div class="specialty-grid">
                 @for (esp of especialidades(); track esp) {
-                  <mat-card 
-                    class="selectable-card" 
-                    [class.selected]="especialidadeForm.get('especialidade')?.value === esp.nome"
-                    (click)="selecionarEspecialidade(esp, stepper)">
+                  <mat-card
+                    class="selectable-card"
+                    [class.selected]="
+                      especialidadeForm.get('especialidade')?.value === esp.nome
+                    "
+                    (click)="selecionarEspecialidade(esp, stepper)"
+                  >
                     <mat-card-content>
                       <mat-icon color="primary">medical_services</mat-icon>
                       <h4>{{ esp.nome }}</h4>
@@ -69,7 +81,14 @@ import { of } from 'rxjs';
               </div>
             </div>
             <div class="stepper-actions">
-              <button mat-raised-button color="primary" matStepperNext [disabled]="especialidadeForm.invalid">Próximo</button>
+              <button
+                mat-raised-button
+                color="primary"
+                matStepperNext
+                [disabled]="especialidadeForm.invalid"
+              >
+                Próximo
+              </button>
             </div>
           </form>
         </mat-step>
@@ -80,36 +99,55 @@ import { of } from 'rxjs';
             <ng-template matStepLabel>Médico</ng-template>
             <div class="step-content">
               <h3>Selecione o Médico</h3>
-              
+
               <div class="doctors-grid">
                 @for (medico of medicosFiltrados(); track medico.id) {
-                  <mat-card 
+                  <mat-card
                     class="doctor-card selectable-card"
-                    [class.selected]="medicoForm.get('medicoId')?.value === medico.id"
-                    (click)="selecionarMedico(medico.id, stepper)">
+                    [class.selected]="
+                      medicoForm.get('medicoId')?.value === medico.id
+                    "
+                    (click)="selecionarMedico(medico.id, stepper)"
+                  >
                     <mat-card-header>
                       <div mat-card-avatar class="doc-avatar">
                         <mat-icon>person</mat-icon>
                       </div>
                       <mat-card-title>Dr(a). {{ medico.nome }}</mat-card-title>
-                      <mat-card-subtitle>CRM: {{ medico.crm }}</mat-card-subtitle>
+                      <mat-card-subtitle
+                        >CRM: {{ medico.crm }}</mat-card-subtitle
+                      >
                     </mat-card-header>
                     <mat-card-content>
                       <div class="doc-stats">
-                        <span class="rating"><mat-icon>star</mat-icon> {{ medico.avaliacao }}</span>
-                        <span class="count">{{ medico.consultas }} consultas</span>
+                        <span class="rating"
+                          ><mat-icon>star</mat-icon>
+                          {{ medico.avaliacao }}</span
+                        >
+                        <span class="count"
+                          >{{ medico.consultas }} consultas</span
+                        >
                       </div>
                     </mat-card-content>
                   </mat-card>
                 }
                 @if (medicosFiltrados().length === 0) {
-                  <p class="empty-msg">Nenhum médico disponível para esta especialidade.</p>
+                  <p class="empty-msg">
+                    Nenhum médico disponível para esta especialidade.
+                  </p>
                 }
               </div>
             </div>
             <div class="stepper-actions">
               <button mat-button matStepperPrevious>Voltar</button>
-              <button mat-raised-button color="primary" matStepperNext [disabled]="medicoForm.invalid">Próximo</button>
+              <button
+                mat-raised-button
+                color="primary"
+                matStepperNext
+                [disabled]="medicoForm.invalid"
+              >
+                Próximo
+              </button>
             </div>
           </form>
         </mat-step>
@@ -120,12 +158,13 @@ import { of } from 'rxjs';
             <ng-template matStepLabel>Data e Hora</ng-template>
             <div class="step-content">
               <h3>Escolha a Data e Horário</h3>
-              
+
               <div class="datetime-layout">
                 <mat-card class="calendar-card">
-                  <mat-calendar 
+                  <mat-calendar
                     (selectedChange)="onDateSelected($event)"
-                    [selected]="dataHoraForm.get('data')?.value">
+                    [selected]="dataHoraForm.get('data')?.value"
+                  >
                   </mat-calendar>
                 </mat-card>
 
@@ -134,24 +173,37 @@ import { of } from 'rxjs';
                   @if (horarios().length > 0) {
                     <div class="slots-grid">
                       @for (hora of horarios(); track hora) {
-                        <button mat-stroked-button 
+                        <button
+                          mat-stroked-button
                           type="button"
                           class="time-slot"
-                          [class.selected-slot]="dataHoraForm.get('hora')?.value === hora"
-                          (click)="selecionarHorario(hora)">
+                          [class.selected-slot]="
+                            dataHoraForm.get('hora')?.value === hora
+                          "
+                          (click)="selecionarHorario(hora)"
+                        >
                           {{ hora }}
                         </button>
                       }
                     </div>
                   } @else {
-                    <p class="empty-msg">Selecione uma data para ver os horários.</p>
+                    <p class="empty-msg">
+                      Selecione uma data para ver os horários.
+                    </p>
                   }
                 </div>
               </div>
             </div>
             <div class="stepper-actions">
               <button mat-button matStepperPrevious>Voltar</button>
-              <button mat-raised-button color="primary" matStepperNext [disabled]="dataHoraForm.invalid">Próximo</button>
+              <button
+                mat-raised-button
+                color="primary"
+                matStepperNext
+                [disabled]="dataHoraForm.invalid"
+              >
+                Próximo
+              </button>
             </div>
           </form>
         </mat-step>
@@ -161,16 +213,27 @@ import { of } from 'rxjs';
           <form [formGroup]="pacienteForm" (ngSubmit)="agendar()">
             <ng-template matStepLabel>Confirmação</ng-template>
             <div class="step-content">
-              
               <div class="confirmation-layout">
                 <div class="form-side">
                   <h3>Dados do Paciente</h3>
-                  
+
                   <mat-form-field appearance="outline" class="w-full">
                     <mat-label>Pesquisar Paciente (Nome)</mat-label>
-                    <input type="text" matInput formControlName="pacienteSearch" [matAutocomplete]="auto">
-                    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayPaciente" (optionSelected)="onPacienteSelected($event)">
-                      @for (paciente of pacientesFiltrados(); track paciente.id) {
+                    <input
+                      type="text"
+                      matInput
+                      formControlName="pacienteSearch"
+                      [matAutocomplete]="auto"
+                    />
+                    <mat-autocomplete
+                      #auto="matAutocomplete"
+                      [displayWith]="displayPaciente"
+                      (optionSelected)="onPacienteSelected($event)"
+                    >
+                      @for (
+                        paciente of pacientesFiltrados();
+                        track paciente.id
+                      ) {
                         <mat-option [value]="paciente">
                           {{ paciente.nome }} (Nº {{ paciente.numeroPaciente }})
                         </mat-option>
@@ -180,7 +243,12 @@ import { of } from 'rxjs';
 
                   <mat-form-field appearance="outline" class="w-full">
                     <mat-label>Motivo da Consulta</mat-label>
-                    <textarea matInput formControlName="motivo" rows="3" placeholder="Sintomas, exames de rotina, etc."></textarea>
+                    <textarea
+                      matInput
+                      formControlName="motivo"
+                      rows="3"
+                      placeholder="Sintomas, exames de rotina, etc."
+                    ></textarea>
                   </mat-form-field>
                 </div>
 
@@ -193,7 +261,9 @@ import { of } from 'rxjs';
                       <div class="summary-list">
                         <div class="s-item">
                           <span class="s-label">Especialidade</span>
-                          <span class="s-value">{{ especialidadeForm.get('especialidade')?.value }}</span>
+                          <span class="s-value">{{
+                            especialidadeForm.get('especialidade')?.value
+                          }}</span>
                         </div>
                         <div class="s-item">
                           <span class="s-label">Médico</span>
@@ -201,7 +271,13 @@ import { of } from 'rxjs';
                         </div>
                         <div class="s-item">
                           <span class="s-label">Data e Hora</span>
-                          <span class="s-value">{{ dataHoraForm.get('data')?.value | date:'dd/MM/yyyy' }} às {{ dataHoraForm.get('hora')?.value }}</span>
+                          <span class="s-value"
+                            >{{
+                              dataHoraForm.get('data')?.value
+                                | date: 'dd/MM/yyyy'
+                            }}
+                            às {{ dataHoraForm.get('hora')?.value }}</span
+                          >
                         </div>
                         <div class="s-item total-item">
                           <span class="s-label">Valor da Consulta</span>
@@ -213,10 +289,17 @@ import { of } from 'rxjs';
                 </div>
               </div>
             </div>
-            
+
             <div class="stepper-actions">
-              <button mat-button matStepperPrevious type="button">Voltar</button>
-              <button mat-raised-button color="primary" type="submit" [disabled]="pacienteForm.invalid || isSubmitting()">
+              <button mat-button matStepperPrevious type="button">
+                Voltar
+              </button>
+              <button
+                mat-raised-button
+                color="primary"
+                type="submit"
+                [disabled]="pacienteForm.invalid || isSubmitting()"
+              >
                 @if (isSubmitting()) {
                   <mat-icon>hourglass_empty</mat-icon> Agendando...
                 } @else {
@@ -226,219 +309,235 @@ import { of } from 'rxjs';
             </div>
           </form>
         </mat-step>
-
       </mat-stepper>
     </div>
   `,
-  styles: [`
-    .page-container {
-      padding: 24px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    
-    .page-header {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 24px;
-      
-      h2 { margin: 0; font-size: 24px; }
-    }
-
-    .custom-stepper {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-      overflow: hidden;
-    }
-
-    .step-content {
-      padding: 24px 0;
-      
-      h3 {
-        margin-top: 0;
-        margin-bottom: 24px;
-        color: var(--color-gray-800);
-      }
-    }
-
-    .stepper-actions {
-      display: flex;
-      justify-content: flex-end;
-      gap: 12px;
-      margin-top: 24px;
-      padding-top: 16px;
-      border-top: 1px solid var(--color-gray-200);
-    }
-
-    .w-full { width: 100%; }
-
-    /* Grids */
-    .specialty-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 16px;
-    }
-
-    .doctors-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-    }
-
-    .selectable-card {
-      cursor: pointer;
-      transition: all 0.2s ease;
-      border: 2px solid transparent;
-      
-      &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      }
-      
-      &.selected {
-        border-color: var(--color-primary-500);
-        background-color: var(--color-primary-50);
-      }
-
-      mat-card-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  styles: [
+    `
+      .page-container {
         padding: 24px;
-        text-align: center;
-        
-        mat-icon {
-          font-size: 40px;
-          height: 40px;
-          width: 40px;
-          margin-bottom: 16px;
-        }
-        
-        h4 { margin: 0; font-size: 16px; }
+        max-width: 1000px;
+        margin: 0 auto;
       }
-    }
 
-    .doctor-card {
-      padding: 8px;
-      
-      .doc-avatar {
-        background: var(--color-primary-100);
-        color: var(--color-primary-700);
+      .page-header {
         display: flex;
         align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-      }
-      
-      .doc-stats {
-        display: flex;
-        justify-content: space-between;
-        color: var(--color-gray-600);
-        font-size: 14px;
-        margin-top: 8px;
-        
-        .rating {
-          display: flex;
-          align-items: center;
-          gap: 4px;
-          color: #eab308;
-          mat-icon { font-size: 16px; height: 16px; width: 16px; }
+        gap: 16px;
+        margin-bottom: 24px;
+
+        h2 {
+          margin: 0;
+          font-size: 24px;
         }
       }
-    }
 
-    /* DateTime layout */
-    .datetime-layout {
-      display: grid;
-      grid-template-columns: 350px 1fr;
-      gap: 32px;
-      
-      @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+      .custom-stepper {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
       }
-    }
 
-    .calendar-card {
-      border-radius: 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
+      .step-content {
+        padding: 24px 0;
 
-    .time-slots-container {
-      h4 { margin-top: 0; margin-bottom: 16px; }
-      
-      .slots-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        h3 {
+          margin-top: 0;
+          margin-bottom: 24px;
+          color: var(--color-gray-800);
+        }
+      }
+
+      .stepper-actions {
+        display: flex;
+        justify-content: flex-end;
         gap: 12px;
+        margin-top: 24px;
+        padding-top: 16px;
+        border-top: 1px solid var(--color-gray-200);
       }
-      
-      .time-slot {
-        &.selected-slot {
-          background-color: var(--color-primary-600);
-          color: white;
-          border-color: var(--color-primary-600);
-        }
-      }
-    }
 
-    /* Confirmation Layout */
-    .confirmation-layout {
-      display: grid;
-      grid-template-columns: 1fr 350px;
-      gap: 32px;
-      
-      @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+      .w-full {
+        width: 100%;
       }
-    }
 
-    .summary-card {
-      background-color: var(--color-gray-50);
-      border: 1px solid var(--color-gray-200);
-      border-radius: 12px;
-      
-      .summary-list {
-        display: flex;
-        flex-direction: column;
+      /* Grids */
+      .specialty-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 16px;
       }
-      
-      .s-item {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        
-        .s-label {
-          font-size: 13px;
-          color: var(--color-gray-500);
-          text-transform: uppercase;
-        }
-        .s-value {
-          font-weight: 500;
-          color: var(--color-gray-900);
-        }
-      }
-      
-      .total-item {
-        margin-top: 16px;
-        padding-top: 16px;
-        border-top: 1px dashed var(--color-gray-300);
-        
-        .price {
-          font-size: 20px;
-          color: var(--color-primary-700);
-          font-weight: 700;
-        }
-      }
-    }
 
-    .empty-msg {
-      color: var(--color-gray-500);
-      font-style: italic;
-    }
-  `]
+      .doctors-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 16px;
+      }
+
+      .selectable-card {
+        cursor: pointer;
+        transition: all 0.2s ease;
+        border: 2px solid transparent;
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        &.selected {
+          border-color: var(--color-primary-500);
+          background-color: var(--color-primary-50);
+        }
+
+        mat-card-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 24px;
+          text-align: center;
+
+          mat-icon {
+            font-size: 40px;
+            height: 40px;
+            width: 40px;
+            margin-bottom: 16px;
+          }
+
+          h4 {
+            margin: 0;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .doctor-card {
+        padding: 8px;
+
+        .doc-avatar {
+          background: var(--color-primary-100);
+          color: var(--color-primary-700);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+        }
+
+        .doc-stats {
+          display: flex;
+          justify-content: space-between;
+          color: var(--color-gray-600);
+          font-size: 14px;
+          margin-top: 8px;
+
+          .rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: #eab308;
+            mat-icon {
+              font-size: 16px;
+              height: 16px;
+              width: 16px;
+            }
+          }
+        }
+      }
+
+      /* DateTime layout */
+      .datetime-layout {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        gap: 32px;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .calendar-card {
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .time-slots-container {
+        h4 {
+          margin-top: 0;
+          margin-bottom: 16px;
+        }
+
+        .slots-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+          gap: 12px;
+        }
+
+        .time-slot {
+          &.selected-slot {
+            background-color: var(--color-primary-600);
+            color: white;
+            border-color: var(--color-primary-600);
+          }
+        }
+      }
+
+      /* Confirmation Layout */
+      .confirmation-layout {
+        display: grid;
+        grid-template-columns: 1fr 350px;
+        gap: 32px;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .summary-card {
+        background-color: var(--color-gray-50);
+        border: 1px solid var(--color-gray-200);
+        border-radius: 12px;
+
+        .summary-list {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .s-item {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          .s-label {
+            font-size: 13px;
+            color: var(--color-gray-500);
+            text-transform: uppercase;
+          }
+          .s-value {
+            font-weight: 500;
+            color: var(--color-gray-900);
+          }
+        }
+
+        .total-item {
+          margin-top: 16px;
+          padding-top: 16px;
+          border-top: 1px dashed var(--color-gray-300);
+
+          .price {
+            font-size: 20px;
+            color: var(--color-primary-700);
+            font-weight: 700;
+          }
+        }
+      }
+
+      .empty-msg {
+        color: var(--color-gray-500);
+        font-style: italic;
+      }
+    `,
+  ],
 })
 export class FormConsultaComponent implements OnInit {
   private fb = inject(FormBuilder);
@@ -449,22 +548,22 @@ export class FormConsultaComponent implements OnInit {
   private consultaService = inject(ConsultaService);
 
   especialidadeForm = this.fb.group({
-    especialidade: ['', Validators.required]
+    especialidade: ['', Validators.required],
   });
 
   medicoForm = this.fb.group({
-    medicoId: ['', Validators.required]
+    medicoId: ['', Validators.required],
   });
 
   dataHoraForm = this.fb.group({
     data: [null as Date | null, Validators.required],
-    hora: ['', Validators.required]
+    hora: ['', Validators.required],
   });
 
   pacienteForm = this.fb.group({
     pacienteSearch: ['', Validators.required],
     pacienteId: ['', Validators.required],
-    motivo: ['', Validators.required]
+    motivo: ['', Validators.required],
   });
 
   // State
@@ -482,42 +581,45 @@ export class FormConsultaComponent implements OnInit {
   }
 
   carregarEspecialidades() {
-    this.medicoService.listarEspecialidades().subscribe(
-      res => this.especialidades.set(res)
-    );
+    this.medicoService
+      .listarEspecialidades()
+      .subscribe((res) => this.especialidades.set(res));
   }
 
   carregarMedicos() {
     // We assume a generic list of doctors is available or we filter them based on specialty later
-    this.medicoService.listar().subscribe(
-      res => this.todosMedicos.set(res)
-    );
+    this.medicoService.listar().subscribe((res) => this.todosMedicos.set(res));
   }
 
   setupPacienteAutocomplete() {
-    this.pacienteForm.get('pacienteSearch')?.valueChanges.pipe(
-      startWith(''),
-      debounceTime(300),
-      distinctUntilChanged(),
-      switchMap(value => {
-        const nome = typeof value === 'string' ? value : (value as any)?.nome;
-        return nome ? this.pacienteService.buscarPorNome(nome) : of([]);
-      })
-    ).subscribe(pacientes => {
-      this.pacientesFiltrados.set(pacientes);
-    });
+    this.pacienteForm
+      .get('pacienteSearch')
+      ?.valueChanges.pipe(
+        startWith(''),
+        debounceTime(300),
+        distinctUntilChanged(),
+        switchMap((value) => {
+          const nome = typeof value === 'string' ? value : (value as any)?.nome;
+          return nome ? this.pacienteService.buscarPorNome(nome) : of([]);
+        }),
+      )
+      .subscribe((pacientes) => {
+        this.pacientesFiltrados.set(pacientes);
+      });
   }
 
   selecionarEspecialidade(esp: Especialidade, stepper: any) {
     this.especialidadeForm.patchValue({ especialidade: esp.nome });
-    
+
     // Filtrar medicos
-    const filtrados = this.todosMedicos().filter(m => m.especialidadeId === esp.id);
+    const filtrados = this.todosMedicos().filter(
+      (m) => m.especialidadeId === esp.id,
+    );
     this.medicosFiltrados.set(filtrados);
-    
+
     // Limpar selecao anterior de medico
     this.medicoForm.reset();
-    
+
     stepper.next();
   }
 
@@ -536,9 +638,9 @@ export class FormConsultaComponent implements OnInit {
         this.horarios.set([]);
         return;
       }
-      this.medicoService.horariosDisponiveis(medicoId, data).subscribe(
-        slots => this.horarios.set(slots)
-      );
+      this.medicoService
+        .horariosDisponiveis(medicoId, data)
+        .subscribe((slots) => this.horarios.set(slots));
     } else {
       this.horarios.set([]);
     }
@@ -559,12 +661,17 @@ export class FormConsultaComponent implements OnInit {
 
   getMedicoNome(): string {
     const id = this.medicoForm.get('medicoId')?.value;
-    const medico = this.todosMedicos().find(m => m.id === id);
+    const medico = this.todosMedicos().find((m) => m.id === id);
     return medico ? `Dr(a). ${medico.nome}` : '';
   }
 
   agendar() {
-    if (this.especialidadeForm.invalid || this.medicoForm.invalid || this.dataHoraForm.invalid || this.pacienteForm.invalid) {
+    if (
+      this.especialidadeForm.invalid ||
+      this.medicoForm.invalid ||
+      this.dataHoraForm.invalid ||
+      this.pacienteForm.invalid
+    ) {
       return;
     }
 
@@ -580,18 +687,22 @@ export class FormConsultaComponent implements OnInit {
       tipo: 'consulta',
       duracaoMinutos: 30,
       valorConsulta: 2500, // Hardcoded for display
-      status: 'agendada'
+      status: 'agendada',
     };
 
     this.consultaService.criar(payload).subscribe({
       next: () => {
-        this.snackBar.open('Consulta agendada com sucesso!', 'Fechar', { duration: 3000 });
+        this.snackBar.open('Consulta agendada com sucesso!', 'Fechar', {
+          duration: 3000,
+        });
         this.router.navigate(['/recepcao/consultas']);
       },
       error: () => {
-        this.snackBar.open('Erro ao agendar consulta.', 'Fechar', { duration: 3000 });
+        this.snackBar.open('Erro ao agendar consulta.', 'Fechar', {
+          duration: 3000,
+        });
         this.isSubmitting.set(false);
-      }
+      },
     });
   }
 
