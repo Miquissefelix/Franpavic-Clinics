@@ -2,8 +2,12 @@ import { Routes } from '@angular/router';
 import { authGuard, perfilGuard, loginGuard } from './core/auth/auth.guard';
 
 export const routes: Routes = [
-  // ─── Redireccionamento raiz ───────────────────────────────
-  { path: '', redirectTo: '/entrar', pathMatch: 'full' },
+  // ─── Landing Page ─────────────────────────────────────────
+  {
+    path: '',
+    loadComponent: () => import('./features/public/landing/landing.component').then(m => m.LandingComponent),
+    pathMatch: 'full'
+  },
 
   // ─── Autenticação ────────────────────────────────────────
   {
